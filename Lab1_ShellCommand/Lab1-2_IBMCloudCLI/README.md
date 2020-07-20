@@ -13,9 +13,10 @@
 ```
  ibmcloud target --cf
 ```
- gitでソースコードを自分のPCにクローンしましょう。
+ gitでソースコードを自分のPCにクローンしましょう。(gitについてはGitの会で詳しく紹介します）
 ```
  git clone https://github.com/IBM-Cloud/node-helloworld.git
+ cd node-helloworld/
 ```
 現在他に動いているアプ氏がないか確認
 ```
