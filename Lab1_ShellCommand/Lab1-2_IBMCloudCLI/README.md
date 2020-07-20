@@ -17,9 +17,19 @@
 ```
  git clone https://*************
 ```
+現在他に動いているアプ氏がないか確認
+```
+ ibmcloud cf list
+```
+あれば止める
+```
+ ibmcloud cf stop アプリ名
+```
 IBM cloudのCloud foundryにソースコードをアップします。
 ```
  ibmcloud cf push
 ```
+その他のコマンド例
+https://cloud.ibm.com/docs/cli?topic=cli-ibmcloud_commands_apps&locale=ja
 
  
