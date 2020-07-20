@@ -18,7 +18,7 @@
  git clone https://github.com/IBM-Cloud/node-helloworld.git
  cd node-helloworld/
 ```
-現在他に動いているアプ氏がないか確認
+現在他に動いているアプリがないか確認
 ```
  ibmcloud app list
 ```
@@ -34,6 +34,7 @@ IBM cloudのCloud foundryにソースコードをアップします。
 ```
  ibmcloud app list
 ```
+ブラウザーでそのURLにアクセスして動作確認
 
 その他のコマンド例
 https://cloud.ibm.com/docs/cli?topic=cli-ibmcloud_commands_apps&locale=ja
