@@ -36,7 +36,7 @@ IBM cloudのCloud foundryにソースコードをアップします。
 ```
 ブラウザーでそのURLにアクセスして動作確認
 
-![Program](images/hello1.pig)
+![hello1](images/hello1.png)
 
 
 その他のコマンド例
