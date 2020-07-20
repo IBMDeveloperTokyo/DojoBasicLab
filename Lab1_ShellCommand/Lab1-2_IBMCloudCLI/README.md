@@ -8,7 +8,7 @@
  ibmcloud login -r us-south
 ```
 *参考　IBM Cloudのロケーション　https://cloud.ibm.com/docs/containers?topic=containers-regions-and-zones
-# Cloud Foundryにソフトをデプロイ
+# Cloud Foundryにアプリをデプロイ
 　次のコマンドで実行環境Cloud Foundryをターゲットにします。
 ```
  ibmcloud target --cf
