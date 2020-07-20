@@ -36,6 +36,9 @@ IBM cloudのCloud foundryにソースコードをアップします。
 ```
 ブラウザーでそのURLにアクセスして動作確認
 
+![Program](images/hello1.pig)
+
+
 その他のコマンド例
 https://cloud.ibm.com/docs/cli?topic=cli-ibmcloud_commands_apps&locale=ja
 
