@@ -15,7 +15,7 @@
 ```
  gitでソースコードを自分のPCにクローンしましょう。
 ```
- git clone https://*************
+ git clone https://github.com/IBM-Cloud/node-helloworld.git
 ```
 現在他に動いているアプ氏がないか確認
 ```
@@ -29,6 +29,11 @@ IBM cloudのCloud foundryにソースコードをアップします。
 ```
  ibmcloud cf push
 ```
+アプリのURLを確認：アプリ名の右の方にURLが出てきます。
+```
+ ibmcloud app list
+```
+
 その他のコマンド例
 https://cloud.ibm.com/docs/cli?topic=cli-ibmcloud_commands_apps&locale=ja
 
