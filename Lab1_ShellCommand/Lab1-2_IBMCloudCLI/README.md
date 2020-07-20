@@ -37,6 +37,10 @@ IBM cloudのCloud foundryにソースコードをアップします。
 ブラウザーでそのURLにアクセスして動作確認
 
 ![hello1](images/hello1.png)
+名前をいれてEnter
+![hello2](images/hello2.png)
+結果表示
+![hello3](images/hello3.png)
 
 
 その他のコマンド例
