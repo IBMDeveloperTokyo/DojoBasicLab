@@ -19,11 +19,11 @@
 ```
 現在他に動いているアプ氏がないか確認
 ```
- ibmcloud cf list
+ ibmcloud app list
 ```
 あれば止める
 ```
- ibmcloud cf stop アプリ名
+ ibmcloud app stop アプリ名
 ```
 IBM cloudのCloud foundryにソースコードをアップします。
 ```
