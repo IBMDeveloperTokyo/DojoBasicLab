@@ -2,6 +2,9 @@
 
 [インストールはこちらから](https://cloud.ibm.com/docs/cli?topic=cli-install-ibmcloud-cli&locale=ja)
 
+# IBM CF インストール
+ibmcloud cf install
+
 # IBM Cloud にログイン
  次のコマンドでibm cloudにログインしてください。
 ```
@@ -14,6 +17,13 @@
  ibmcloud target --cf
 ```
  gitでソースコードを自分のPCにクローンしましょう。(gitについてはGitの会で詳しく紹介します）
+
+Git のインストール
+
+```
+Gitのインストール
+```
+
 ```
  git clone https://github.com/IBM-Cloud/node-helloworld.git
  cd node-helloworld/
