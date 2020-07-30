@@ -627,7 +627,7 @@ ls -la mydir01
 ```sh
 ~/dojodir:$ ls -la mydir01
 total 0
-drwxr-xr-x  2 nishito  staff   64  7 30 14:18 .
+drwxr-xr-x  2 nishito  staff   64  7 30 14:18 . 
 drwxr-xr-x  4 nishito  staff  128  7 30 14:01 ..
 ~/dojodir:$
 ```
@@ -643,6 +643,175 @@ drwxr-xr-x  4 nishito  staff  128  7 30 14:01 ..
 | rm | ファイルの削除 |
 
 # 4. 権限(パーミッション)
+
+ファイルおよびディレクトリには権限(パーミッション)がついています。
+
+ターミナルに以下のコマンドを入力し、実行してください。
+```sh
+ls -la
+```
+出力例:
+```sh
+~/dojodir:$ ls -la
+total 8
+drwxr-xr-x    4 nishito  staff   128  7 30 15:39 .
+drwxr-xr-x+ 112 nishito  staff  3584  7 30 13:46 ..
+drwxr-xr-x    2 nishito  staff    64  7 30 14:30 mydir01
+-rw-r--r--    1 nishito  staff    21  7 28 18:45 test01.txt
+~/dojodir:$
+```
+
+一列目のd**rwxr-xr-x**というのは、ファイルの種類(最初の文字) + **権限**と前のセクションで説明しました。この右9文字部分**rwxr-xr-x**、**権限**について説明します。
+
+rwxの意味は下記の図のよう**r**が**読取**、**w**が**書込**、**x**が**実行**になっています。**rwx**が書いてあればその権限がある状態、**\-** はその権限がない状態です。権限は3文字ごとに順番に「**所有者**」、「**グループ**」、「**その他**」で分かれています。
+
+ディレクトリの場合、xの実行権限は「ディレクトリへの移動、ディレクトリの中のファイル・ディレクトリの中身へのアクセス」となります。
+
+図4.1
+![permission01](images/permission01.png)
+
+ログインidは(以後id)は1つ以上のグループに属しています。複数のidで1つの環境を使用する場合は、グループごとに権限を管理することがあります。その他はグループに属さないid用の権限になります。
+
+権限は自分が所有者のファイルであれば`chmod [権限指定] ファイル名`で変更できます。
+
+権限指定の方法は文字で指定する方法と数字で指定する方法があります。
+
+テスト用に以下のコマンドを実行して「実行可能な」シェルスクリプトファイルを作ります。
+
+ターミナルに以下のコマンドを入力し、実行してください。
+```sh
+ echo -e '#!/bin/sh\necho "Hello chmod!"' > test.sh
+ ls -la
+ cat test.sh
+```
+
+出力例:
+```sh
+~/dojodir:$ echo -e '#!/bin/sh\necho "Hello chmod!"' > test.sh
+~/dojodir:$  ls -la
+total 16
+drwxr-xr-x    5 nishito  staff   160  7 30 17:18 .
+drwxr-xr-x+ 112 nishito  staff  3584  7 30 13:46 ..
+drwxr-xr-x    2 nishito  staff    64  7 30 14:30 mydir01
+-rw-r--r--    1 nishito  staff    30  7 30 17:18 test.sh
+-rw-r--r--    1 nishito  staff    21  7 28 18:45 test01.txt
+~/dojodir:$ cat test.sh
+#!/bin/sh
+echo "Hello chmod!"
+~/dojodir:$
+```
+
+`test.sh`は「Hello chmod!」と表示するシェルスクリプトです。
+
+作成したシェルスクリプトを実行してみます。
+ターミナルに以下のコマンドを入力し、実行してください。
+```sh
+ ./test.sh
+```
+出力例:
+```sh
+~/dojodir:$ ./test.sh
+-bash: ./test.sh: Permission denied
+~/dojodir:$
+```
+
+権限(x)がないので実行できません。権限をつけましょう。
+
+
+## 文字で権限を指定
+[権限設定先][操作][権限]　で指定できます。
+
+- 権限設定先
+   - u : 所有者(user)
+   - g : グループ(group): 
+   - o : その他(others)
+   - a : 全て
+
+- 操作
+   - \+ : 権限追加
+   - \- : 権限削除
+   - = : 権限設定(追加ではなく、設定)
+
+- 権限
+   - r : 読込
+   - w : 書込
+   - x : 実行
+
+所有者に実行権限を付ける場合は
+**u+x**
+
+所有者とグループに実行権限と読込権限を付ける場合は
+**ug+xr**
+
+所有者に実行権限追加、グループとその他に読込と書き込み権限のみを付ける場合は
+**u+x,go=rw**
+
+のように指定できます(複数の指定が可能です)
+
+`test.sh`に権限をつけましょう。
+ターミナルに以下のコマンドを入力し、実行してください。
+```sh
+ chmod u+x test.sh
+ ls -la test.sh
+```
+出力例:
+```sh
+~/dojodir:$  chmod u+x test.sh
+~/dojodir:$  ls -la test.sh
+-rwxr--r--  1 nishito  staff  30  7 30 17:18 test.sh
+~/dojodir:$
+```
+
+実行権限が付きました。実行してみましょう。
+ターミナルに以下のコマンドを入力し、実行してください。
+```sh
+ ./test.sh
+```
+出力例:
+```sh
+~/dojodir:$ ./test.sh
+Hello chmod!
+~/dojodir:$
+```
+
+## 数字で権限を指定
+x=1, w=2, r=4で、設定したい権限の数字を足した数字を所有者、グループ、その他の順に並べます。
+
+rwxr--r--なら、4+2+1=7, 4, 4, で　744
+
+rwxrwxrwxなら、4+2+1=7, 4+2+1=7, 4+2+1=7で 777 です。
+
+では所有者、グループ、その他に全てrwxの権限を付けてみましょう。
+ターミナルに以下のコマンドを入力し、実行してください。
+```sh
+ chmod 777 test.sh
+ ls -la test.sh
+```
+出力例:
+```sh
+~/dojodir:$ chmod 777 test.sh
+~/dojodir:$  ls -la test.sh
+-rwxrwxrwx  1 nishito  staff  30  7 30 17:18 test.sh
+~/dojodir:$
+```
+
+ちなみに数字は以下のように２進数で表したものを10進数に直した数字と同じです。
+
+図4.2:
+![permission2](images/permission02.png)
+
+
+# 5. 環境変数
+
+# 6. パイプ
+
+# 7. sudo: 管理者権限での実行
+
+# 8. ssh: リモートアクセス
+
+# 9. 最後に　man
+
+
 
 
 
