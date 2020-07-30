@@ -270,7 +270,7 @@ deldir
 ~/dojodir:$ 
 ```
 
-ディレクトリの削除は`rmdir [ディレクトリ名]`　でできます。ーミナルに以下のコマンドを入力し、実行してください。
+ディレクトリの削除は`rmdir [ディレクトリ名]`　でできます。ターミナルに以下のコマンドを入力し、実行してください。
 ```sh
 rmdir deldir
 ```
@@ -300,7 +300,7 @@ ls
 | rmdir | ディレクトリの削除 |
 
 
-# 3. ファイルと権限
+# 3. ファイル
 `~/dojodir`(**ホームディレクトリ**の下に作成した**dojodir**)で行います。
 ターミナルに以下のコマンドを入力し、実行してください。
 ```sh
@@ -420,7 +420,7 @@ Hello dojo!
 ```
 
 
-## 3.2 ファイルチェック＆操作しよう!
+## 3.2 ファイルをチェック＆操作しよう!
 
 練習用にディレクトリ`mydir01`を1つ作ります。
 ターミナルに以下のコマンドを入力し、実行してください。
@@ -506,7 +506,144 @@ ls -la *.txt
 ```
 `*`はワイルドカードと呼ばれ、0文字以上の文字を表します。たくさんのファイルの中から絞り込みをするのに便利です。ワイルドカードには他にも`?`(任意の1文字)などがあります。
 
-### cp, mv, rename, rm: ファイルのコピー、移動、リネーム、削除
+### cp, mv,,rm: ファイルのコピー、移動、名前変更、削除
+
+#### cp: ファイルのコピー
+`cp [コピー元ファイル名] [コピー先ファイル名]`でファイルのコピーができます。
+
+ターミナルに以下のコマンドを入力し、実行してください。
+```sh
+cp test01.txt copy_test01.txt
+ls -la
+```
+
+出力例:
+```sh
+~/dojodir:$ cp test01.txt copy_test01.txt
+~/dojodir:$ ls -la
+total 16
+drwxr-xr-x    5 nishito  staff   160  7 30 10:16 .
+drwxr-xr-x+ 111 nishito  staff  3552  7 28 18:25 ..
+-rw-r--r--    1 nishito  staff    21  7 30 10:16 copy_test01.txt
+drwxr-xr-x    2 nishito  staff    64  7 29 14:17 mydir01
+-rw-r--r--    1 nishito  staff    21  7 28 18:45 test01.txt
+~/dojodir:$ 
+```
+\[コピー元ファイル名\]にはパスを入れることで、カレントディレクトリ以外のファイルもコピー可能です。\[コピー先ファイル名\]も同様です。もし、コピー先ディレクトリに同じファイル名がなく、同じファイル名でコピーしたい場合、ファイル名は省略できます。
+
+ またファイル名を引数にするコマンドは全てパス名の指定が可能です。
+
+ターミナルに以下のコマンドを入力し、実行してください。
+```sh
+cp test01.txt mydir01
+cp test01.txt mydir01/test02.txt
+ls -la mydir01
+
+出力例:
+```sh
+~/dojodir:$ cp test01.txt mydir01
+~/dojodir:$ ls -la mydir01
+total 16
+drwxr-xr-x  4 nishito  staff  128  7 30 10:28 .
+drwxr-xr-x  5 nishito  staff  160  7 30 10:26 ..
+-rw-r--r--  1 nishito  staff   21  7 30 10:21 test01.txt
+-rw-r--r--  1 nishito  staff   21  7 30 10:28 test02.txt
+~/dojodir:$ 
+```
+
+#### mv: ファイル または ディレクトリの名前変更、移動
+`mv [ファイルまたはディレクトリ名] [変更後ファイルまたはディレクトリ名]`でファイルまたはディレクトリの名前変更ができます。
+
+ターミナルに以下のコマンドを入力し、実行してください。
+```sh
+mv copy_test01.txt text03.txt
+ls -la 
+```
+
+出力例:
+```sh
+~/dojodir:$ mv copy_test01.txt text03.txt
+~/dojodir:$ ls -la 
+total 16
+drwxr-xr-x    5 nishito  staff   160  7 30 10:33 .
+drwxr-xr-x+ 111 nishito  staff  3552  7 28 18:25 ..
+drwxr-xr-x    4 nishito  staff   128  7 30 10:28 mydir01
+-rw-r--r--    1 nishito  staff    21  7 28 18:45 test01.txt
+-rw-r--r--    1 nishito  staff    21  7 30 10:16 text03.txt
+~/dojodir:$ 
+```
+
+`mv [ファイルまたはディレクトリ名] [移動先のディレクトリ名]`でファイルのディレクトリの変更(移動)ができます。
+
+
+ターミナルに以下のコマンドを入力し、実行してください。
+```sh
+mv text03.txt mydir01
+ls -la mydir01
+```
+
+出力例:
+```sh
+~/dojodir:$ mv text03.txt mydir01
+~/dojodir:$ ls -la mydir01
+total 24
+drwxr-xr-x  5 nishito  staff  160  7 30 14:01 .
+drwxr-xr-x  4 nishito  staff  128  7 30 14:01 ..
+-rw-r--r--  1 nishito  staff   21  7 30 10:21 test01.txt
+-rw-r--r--  1 nishito  staff   21  7 30 10:28 test02.txt
+-rw-r--r--  1 nishito  staff   21  7 30 10:16 text03.txt
+~/dojodir:$
+```
+
+#### rm: ファイルの削除
+
+`rm [ファイル名] [移動先のディレクトリ名]`でファイルのディレクトリの変更ができます。
+
+ターミナルに以下のコマンドを入力し、実行してください。
+```sh
+rm mydir01/text03.txt
+ls -la mydir01
+```
+
+出力例:
+```sh
+~/dojodir:$ ls -la mydir01
+total 16
+drwxr-xr-x  4 nishito  staff  128  7 30 14:16 .
+drwxr-xr-x  4 nishito  staff  128  7 30 14:01 ..
+-rw-r--r--  1 nishito  staff   21  7 30 10:21 test01.txt
+-rw-r--r--  1 nishito  staff   21  7 30 10:28 test02.txt
+~/dojodir:$
+```
+
+`*`(ワイルドカード)も使えます。
+ターミナルに以下のコマンドを入力し、実行してください。
+```sh
+rm mydir01/*.txt
+ls -la mydir01
+```
+
+出力例:
+```sh
+~/dojodir:$ ls -la mydir01
+total 0
+drwxr-xr-x  2 nishito  staff   64  7 30 14:18 .
+drwxr-xr-x  4 nishito  staff  128  7 30 14:01 ..
+~/dojodir:$
+```
+
+### 3で試したコマンド一覧：
+|  コマンド  |  用途 |
+| ---- | ---- |
+|  echo  |  引数として渡した文字列を標準出力(=ターミナル)に出力する  |
+|  cat |  ファイルの中身の表示  |
+| wc | ファオルの行数、単語数、バイト数の表示 |
+| ls | ファイルとディレクトリのリスト |
+| mv | ファイル または ディレクトリの名前変更、移動 |
+| rm | ファイルの削除 |
+
+# 4. 権限(パーミッション)
+
 
 
 
