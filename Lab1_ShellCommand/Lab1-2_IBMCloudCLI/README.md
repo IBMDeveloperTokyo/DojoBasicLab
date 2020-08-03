@@ -1,3 +1,17 @@
+# Dojo Basic: Lab1-1 コマンドの基礎
+
+## 目的とゴール
+### 目的
+ - IBM Cloud CLI を通して、Command Line Interfaceについて学びます。
+
+### ゴール
+ - クラウド開発によく利用するコマンドが使えるようになる
+
+### このLabの実施前提
+ - Lab1-1で実施したコマンド実行環境、IBM Cloud　ライトアカウント
+
+
+
 # IBM cloud CLIのインストール
 
 [インストールはこちらから](https://cloud.ibm.com/docs/cli?topic=cli-install-ibmcloud-cli&locale=ja)
