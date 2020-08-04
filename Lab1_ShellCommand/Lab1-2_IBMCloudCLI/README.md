@@ -1,18 +1,16 @@
-# Dojo Basic: Lab1-1 コマンドの基礎
+# Dojo Basic: Lab1-2 IBM Cloud CLI
 
 ## 目的とゴール
 ### 目的
- - IBM Cloud CLI を通して、Command Line Interfaceについて学びます。
+ - IBM Cloud CLI を通して、コマンド・ライン・インターフェースについて学びます。
 
 ### ゴール
- - クラウド開発によく利用するコマンドが使えるようになる
+ - クラウド開発でよく利用するコマンドが使えるようになる
 
 ### このLabの実施前提
  - Lab1-1で実施したコマンド実行環境、IBM Cloud　ライトアカウント
 
-
-
-# IBM cloud CLIのインストール
+# （事前準備）IBM Cloud CLIのインストール
 
 Macの場合は[こちら](https://github.com/IBMDeveloperTokyo/DojoBasicLab/blob/master/Lab1_ShellCommand/Lab1-2_IBMCloudCLI/cli_install_mac.md)を参照ください。　
 
@@ -31,13 +29,20 @@ Macの場合は[こちら](https://github.com/IBMDeveloperTokyo/DojoBasicLab/blo
 
 Windowsの場合は[こちら](https://github.com/IBMDeveloperTokyo/DojoBasicLab/tree/master/Lab1_ShellCommand/Lab1-2_IBMCloudCLI/git_install_windows.md)を参照ください。　
 
-# IBM Cloud にログイン
+# 1. IBM Cloud CLIとは
+ - **IBM Cloud CLI** (Command Line Interface/コマンドラインインターフェース)はIBM IBM Cloudの**リソースを作成、管理するための統合ツール**です。
+ - IBM Cloud上で、**アプリケーションの作成や削除、ユーザー管理、使用状況の確認**などが実行できます。
+ - Docker, Kubernetes, Helm, Object Strage など**さまざまなプラグインを追加導入**することができます。
+ - 操作に慣れるとGUIよりすばやく処理を行うことが可能です。
+ - Mac, Windows 10 Pro, Linux(cURLも必要)にインストールできます。
+
+# 2.IBM Cloud にログイン
  次のコマンドでibm cloudにログインしてください。
 ```
  ibmcloud login -r us-south
 ```
 *参考　IBM Cloudのロケーション　https://cloud.ibm.com/docs/containers?topic=containers-regions-and-zones
-# Cloud Foundryにアプリをデプロイ
+# 3.Cloud Foundryにアプリをデプロイ
 　次のコマンドで実行環境Cloud Foundryをターゲットにします。
 ```
  ibmcloud target --cf
