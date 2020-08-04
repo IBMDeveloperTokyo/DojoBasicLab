@@ -1,1 +1,0 @@
-# macにIBM cloud cliをインストール
