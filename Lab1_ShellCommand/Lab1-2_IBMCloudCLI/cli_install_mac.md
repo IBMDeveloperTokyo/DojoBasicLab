@@ -1,5 +1,7 @@
 # MacにIBM Cloud CLIをインストール
 
+以下のコマンドを端末にコピー・アンド・ペーストして実行します。
+(参考　https://cloud.ibm.com/docs/cli?topic=cli-install-ibmcloud-cli&locale=ja
 ```
 curl -fsSL https://clis.cloud.ibm.com/install/osx | sh
 ```
