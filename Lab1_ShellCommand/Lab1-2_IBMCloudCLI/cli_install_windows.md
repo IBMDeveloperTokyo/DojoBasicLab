@@ -7,6 +7,7 @@ https://github.com/IBM-Cloud/ibm-cloud-cli-release/releases/
 
 ![windows](images/cli_windows.jpg)
 - ダウンロードしたファイルをダブルクリックして実行
+
 ![windows](images/cli_windows2.jpg)
 - "I accesp...."を選択
 ![windows](images/cli_windows3.jpg)
