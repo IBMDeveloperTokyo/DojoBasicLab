@@ -22,10 +22,8 @@ ibmcloud cf install
 ```
 Git のインストール
 
-```
-Gitのインストール
-Gitのバージンの確認
-```
+Macの場合はこちらを参照ください。　https://github.com/IBMDeveloperTokyo/DojoBasicLab/blob/master/Lab1_ShellCommand/Lab1-2_IBMCloudCLI/git_install_mac.md
+Windowsの場合はこちらを参照ください。　
 
 # IBM Cloud にログイン
  次のコマンドでibm cloudにログインしてください。
