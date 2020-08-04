@@ -18,7 +18,7 @@ Macの場合は[こちら](https://github.com/IBMDeveloperTokyo/DojoBasicLab/blo
 
 Windowsの場合は[こちら](https://github.com/IBMDeveloperTokyo/DojoBasicLab/tree/master/Lab1_ShellCommand/Lab1-2_IBMCloudCLI/cli_install_windows.md)を参照ください。　
 
-[参考：インストールはこちらから](https://cloud.ibm.com/docs/cli?topic=cli-install-ibmcloud-cli&locale=ja)
+[参考：インストールドキュメント](https://cloud.ibm.com/docs/cli?topic=cli-install-ibmcloud-cli&locale=ja)
 
 
 # IBM CF インストール
