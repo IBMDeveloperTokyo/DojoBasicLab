@@ -149,7 +149,7 @@ cd コマンドでディレクトリを移動します。
 cd dojodir
 ```
 新規.txtファイルを作成します。Cloud Shellで echo コマンドを実行します。
-’’’
+```
 echo Hello! IBM Cloud Shell. > text01.txt
 ```
 lsコマンドでカレントディレクトリ内容を確認します。
