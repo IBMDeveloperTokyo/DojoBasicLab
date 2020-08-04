@@ -15,3 +15,8 @@ $ ibmcloud -v
 $ ibmcloud -v
 ibmcloud version 1.1.0+cc908fe-2020-04-29T09:33:25+00:00
 ```
+
+アンインストールはこちらのコマンドを使ってください。
+```
+/usr/local/ibmcloud/uninstall
+```
