@@ -20,3 +20,6 @@ Homebrew/homebrew-core (git revision 4dd70; last commit 2020-08-04)
 Homebrew/homebrew-cask (git revision eab76; last commit 2020-08-04)
 ```
 
+```
+ibmcloud cf install
+```
