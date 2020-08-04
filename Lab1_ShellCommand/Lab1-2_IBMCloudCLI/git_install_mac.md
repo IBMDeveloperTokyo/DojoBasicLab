@@ -25,6 +25,17 @@ Homebrew/homebrew-cask (git revision eab76; last commit 2020-08-04)
 ```
 $ brew install git
 ```
+実行例  
+```
+$ brew install git
+Updating Homebrew...
+==> Auto-updated Homebrew!
+Updated 1 tap (homebrew/core).
+==> Updated Formulae
+Updated 4 formulae.
+..................
+```
+
 インストールの確認
 ```
 $ git --version
