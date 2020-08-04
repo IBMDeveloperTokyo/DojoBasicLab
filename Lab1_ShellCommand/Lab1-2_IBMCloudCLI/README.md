@@ -93,10 +93,7 @@ curl コマンドでも確認できます。
 https://cloud.ibm.com/docs/cli?topic=cli-ibmcloud_commands_apps&locale=ja
 
 # 4. IBM Cloud Shellを操作する
-IBM Cloud Shell はコンソールから即時にアクセス可能で、その他のインストールは不要です。
 
-
-## 4.1.IBM Cloud Shell でのセッションの開始
 ### 特徴
 IBM® Cloud Shell には、コマンドを実行できる個人ワークスペースとセッションが含まれています。 
 最大 5 つの並行セッションを開くことができます。
@@ -134,4 +131,66 @@ IBM Cloud Shell は、IBM Cloud の管理と開発という目的を想定して
 長時間実行または計算主体のスクリプトやプログラムのサポート、あるいは機密データの処理は想定していません。 
 
 
-
+## 4.1.IBM Cloud Shellセッションの開始
+ls コマンドで カレントディレクトリを確認します。Cloud Shell にlsコマンドを入力します。
+'''
+ls
+'''
+続いて、カレントディレクトリに’dojodir’ディレクトリを作ります。
+'''
+mkdir dojodir
+'''
+lsコマンドで内容を確認します。
+'''
+ls
+'''
+cd コマンドでディレクトリを移動します。
+'''
+cd dojodir
+'''
+新規.txtファイルを作成します。Cloud Shellで echo コマンドを実行します。
+’’’
+echo Hello! IBM Cloud Shell. > text01.txt
+'''
+lsコマンドでカレントディレクトリ内容を確認します。
+出力例：
+'''
+accountname@cloudshell:~/dojodir$ ls
+text01.txt
+'''
+catコマンドでtext01.txt ファイルの内容を確認します。
+出力例:
+’’’
+accountname@cloudshell:~/dojodir$ cat text01.txt
+Hello! IBM Cloud Shell.
+'''
+cpコマンドでtext01.txtをコピーします。
+'''
+cp text01.txt text02.txt
+'''
+lsコマンドでカレントディレクトリの内容を確認します。
+catコマンドでファイルの内容を確認します。
+'''
+ls
+cat text02.txt
+'''
+echo コマンドでファイルを編集します。都度、catコマンドで結果を確認します。
+'''
+cat text02.txt
+echo hello! Cloud Shell again. > text02.txt
+cat text02.txt
+echo hello! IBM Cloud. >> text02.txt
+cat text02.txt
+'''
+出力例：
+'''
+accountname@cloudshell:~/dojodir$ cat text02.txt
+Hello! IBM Cloud Shell.
+accountname@cloudshell:~/dojodir$ echo hello! Cloud Shell again. > text02.txt
+accountname@cloudshell:~/dojodir$ cat text02.txt
+hello! Cloud Shell again.
+accountname@cloudshell:~/dojodir$ echo hello! IBM Cloud. >> text02.txt
+accountname@cloudshell:~/dojodir$ cat text02.txt
+hello! Cloud Shell again.
+hello! IBM Cloud.
+'''
