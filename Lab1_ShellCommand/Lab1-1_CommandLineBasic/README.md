@@ -557,20 +557,20 @@ drwxr-xr-x  5 nishito  staff  160  7 30 10:26 ..
 
 ターミナルに以下のコマンドを入力し、実行してください。
 ```sh
-mv copy_test01.txt text03.txt
+mv copy_test01.txt test03.txt
 ls -la 
 ```
 
 出力例:
 ```sh
-~/dojodir:$ mv copy_test01.txt text03.txt
+~/dojodir:$ mv copy_test01.txt test03.txt
 ~/dojodir:$ ls -la 
 total 16
 drwxr-xr-x    5 nishito  staff   160  7 30 10:33 .
 drwxr-xr-x+ 111 nishito  staff  3552  7 28 18:25 ..
 drwxr-xr-x    4 nishito  staff   128  7 30 10:28 mydir01
 -rw-r--r--    1 nishito  staff    21  7 28 18:45 test01.txt
--rw-r--r--    1 nishito  staff    21  7 30 10:16 text03.txt
+-rw-r--r--    1 nishito  staff    21  7 30 10:16 test03.txt
 ~/dojodir:$ 
 ```
 
@@ -579,20 +579,20 @@ drwxr-xr-x    4 nishito  staff   128  7 30 10:28 mydir01
 
 ターミナルに以下のコマンドを入力し、実行してください。
 ```sh
-mv text03.txt mydir01
+mv test03.txt mydir01
 ls -la mydir01
 ```
 
 出力例:
 ```sh
-~/dojodir:$ mv text03.txt mydir01
+~/dojodir:$ mv test03.txt mydir01
 ~/dojodir:$ ls -la mydir01
 total 24
 drwxr-xr-x  5 nishito  staff  160  7 30 14:01 .
 drwxr-xr-x  4 nishito  staff  128  7 30 14:01 ..
 -rw-r--r--  1 nishito  staff   21  7 30 10:21 test01.txt
 -rw-r--r--  1 nishito  staff   21  7 30 10:28 test02.txt
--rw-r--r--  1 nishito  staff   21  7 30 10:16 text03.txt
+-rw-r--r--  1 nishito  staff   21  7 30 10:16 test03.txt
 ~/dojodir:$
 ```
 
@@ -602,13 +602,13 @@ drwxr-xr-x  4 nishito  staff  128  7 30 14:01 ..
 
 ターミナルに以下のコマンドを入力し、実行してください。
 ```sh
-rm mydir01/text03.txt
+rm mydir01/test03.txt
 ls -la mydir01
 ```
 
 出力例:
 ```sh
-~/dojodir:$ rm mydir01/text03.txt
+~/dojodir:$ rm mydir01/test03.txt
 ~/dojodir:$ ls -la mydir01
 total 16
 drwxr-xr-x  4 nishito  staff  128  7 30 14:16 .
@@ -640,7 +640,7 @@ drwxr-xr-x  4 nishito  staff  128  7 30 14:01 ..
 | ---- | ---- |
 |  echo  |  引数として渡した文字列を標準出力(=ターミナル)に出力する  |
 |  cat |  ファイルの中身の表示  |
-| wc | ファオルの行数、単語数、バイト数の表示 |
+| wc | ファイルの行数、単語数、バイト数の表示 |
 | ls | ファイルとディレクトリのリスト |
 | mv | ファイル または ディレクトリの名前変更、移動 |
 | rm | ファイルの削除 |
@@ -960,7 +960,15 @@ Macでは何かターミナルからコマンド等を導入する際に必要�
 
 アクセス可能なリモートサーバーがあれば、ぜひ試してみてください。
 
+
+
+
 IBM Developer Dojoのセッションに参加している場合は、講師がアクセス可能なサーバーを準備していると思いますので、講師の指示に従ってください。
+
+最後にリモートサーバーをログアウトするには、`exit`を入力します。ターミナルに以下のコマンドを入力し、実行してログアウトしてください。
+```
+exit
+```
 
 
 # 9. 最後に、コマンドの詳細をもっと知りたい!: man
