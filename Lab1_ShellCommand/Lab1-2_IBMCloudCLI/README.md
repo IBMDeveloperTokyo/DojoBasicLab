@@ -24,7 +24,7 @@ ibmcloud cf install
 
 Macの場合は[こちら](https://github.com/IBMDeveloperTokyo/DojoBasicLab/blob/master/Lab1_ShellCommand/Lab1-2_IBMCloudCLI/git_install_mac.md)を参照ください。　
 
-Windowsの場合はこちらを参照ください。　
+Windowsの場合は[こちら](https://github.com/IBMDeveloperTokyo/DojoBasicLab/tree/master/Lab1_ShellCommand/Lab1-2_IBMCloudCLI/git_install_windows.md)を参照ください。　
 
 # IBM Cloud にログイン
  次のコマンドでibm cloudにログインしてください。
