@@ -20,7 +20,7 @@
 ```
 ibmcloud cf install
 ```
-Git のインストール
+# Git のインストール
 
 Macの場合は[こちら](https://github.com/IBMDeveloperTokyo/DojoBasicLab/blob/master/Lab1_ShellCommand/Lab1-2_IBMCloudCLI/git_install_mac.md)を参照ください。　
 
