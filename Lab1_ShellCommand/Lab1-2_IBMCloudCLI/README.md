@@ -132,6 +132,10 @@ IBM Cloud Shell は、IBM Cloud の管理と開発という目的を想定して
 
 
 ## 4.1.IBM Cloud Shellセッションの開始
+IBM Cloud コンソールからCloud Shell を起動します。
+
+## 4.2.基本的なコマンド操作
+この章では、Lab1-1で扱ったコマンド操作を復習します。<br>
 ls コマンドで カレントディレクトリを確認します。Cloud Shell にlsコマンドを入力します。
 ```
 ls
@@ -148,17 +152,17 @@ cd コマンドでディレクトリを移動します。
 ```
 cd dojodir
 ```
-新規.txtファイルを作成します。Cloud Shellで echo コマンドを実行します。
+新規.txtファイル'text01.txt'を作成します。Cloud Shellで echo コマンドを実行します。
 ```
 echo Hello! IBM Cloud Shell. > text01.txt
 ```
-lsコマンドでカレントディレクトリ内容を確認します。
+lsコマンドでカレントディレクトリ内容を確認します。<br>
 出力例：
 ```
 accountname@cloudshell:~/dojodir$ ls
 text01.txt
 ```
-catコマンドでtext01.txt ファイルの内容を確認します。
+catコマンドでtext01.txt ファイルの内容を確認します。<br>
 出力例:
 ```
 accountname@cloudshell:~/dojodir$ cat text01.txt
@@ -168,7 +172,7 @@ cpコマンドでtext01.txtをコピーします。
 ```
 cp text01.txt text02.txt
 ```
-lsコマンドでカレントディレクトリの内容を確認します。
+lsコマンドでカレントディレクトリの内容を確認します。<br>
 catコマンドでファイルの内容を確認します。
 ```
 ls
@@ -194,3 +198,59 @@ accountname@cloudshell:~/dojodir$ cat text02.txt
 hello! Cloud Shell again.
 hello! IBM Cloud.
 ```
+## 4.3.　差分チェック
+この章では、2つのファイルを比較して差分を提示します。<br>
+まず、texr02.txt ファイルのコピーを作成します。
+```
+cp text02.txt text03.txt
+```
+lsコマンドでディレクトリの内容、catコマンドでファイルの内容を確認します。
+```
+ls
+cat text02.txt
+cat text03.txt
+```
+echo コマンドで text03.txtファイルを編集します。
+```
+echo hello world ! >> text03.txt
+```
+cat コマンドで text03.txt の内容を確認します。
+```
+cat text03.txt
+```
+出力例：
+```
+accountname@cloudshell:~/dojodir$ echo hello world ! >> text03.txt
+accountname@cloudshell:~/dojodir$ cat text03.txt
+hello! Cloud Shell again.
+hello! IBM Cloud.
+hello world !
+```
+diff コマンドでtext02.txt と　text03.txt を比較します。
+```
+diff -c text02.txt text03.txt
+```
+出力例：
+```
+accountname@cloudshell:~/dojodir$ diff -c text02.txt text03.txt
+*** text02.txt  2020-08-04 17:41:08.591517696 +0000
+--- text03.txt  2020-08-04 17:54:40.681978142 +0000
+***************
+*** 1,3 ****
+  hello! Cloud Shell again.
+  hello! IBM Cloud.
+! hello world !
+```
+## 4.4.　ダウンロードとアップロード
+作成したファイルは、ダウンロードが可能です。
+コンソール画面のダウンロードボタンより、対象ファイル名を指定するとダウンロードされます。
+
+同様に、アップロードも可能です。
+コンソール画面のアップロードボタンより、ファイルを選択することができます。
+＊容量の大きなファイルは既知の障害の原因になるため、残容量を確認の上、アップロードを行い、障害を回避しましょう。
+
+# (Optional)5. Node,js アプリケーションの作成
+この章では、Cloud Shellからアプリケーションを作成する手順を紹介します。
+ハンズオンで推奨する”ライトアカウント”をご利用の場合、アプリケーション構築数に制限があります。
+3章で作成したアプリとの併用ができません、同一アカウントで試される場合、アプリケーションを削除の上始めてください。
+
