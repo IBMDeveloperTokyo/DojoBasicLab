@@ -4,4 +4,4 @@
 https://github.com/IBM-Cloud/ibm-cloud-cli-release/releases/
 (注意：インストーラーが終了するとシステムが再起動されます。作業途中のファイルなどがある場合は予め保存するなどしておいてください）
 
-![windows](images/cliwindows.jpg)
+![windows](images/cli_windows.jpg)
