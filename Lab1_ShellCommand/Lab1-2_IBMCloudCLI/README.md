@@ -250,7 +250,7 @@ accountname@cloudshell:~/dojodir$ diff -c text02.txt text03.txt
 コンソール画面のアップロードボタンより、ファイルを選択することができます。<br>
 ＊容量の大きなファイルは既知の障害の原因になるため、残容量を確認の上、アップロードを行い、障害を回避しましょう。
 
-# 5 Node,js アプリケーションの作成(Optional)
+# 5 Node.js アプリケーションの作成(Optional)
 この章では、Cloud Shellからアプリケーションを作成する手順を紹介します。<br>
 
 clearコマンドで一度Cloud Shellの画面をリセットします。<br>
@@ -276,3 +276,5 @@ npm run start
 Cloud Shell メニュー・バーの「Web プレビュー (Web preview)」アイコン ![view](images/cloudshell05.png) をクリックします。<br>
 サーバーが指定しているポート’3000’を選択すると、Node.jsのアプリが開きます。
 ![final](images/cloudshell06.png)
+
+以上で、Lab1-2は完了です。お疲れさまでした。
