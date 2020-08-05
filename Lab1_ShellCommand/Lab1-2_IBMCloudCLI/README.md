@@ -84,6 +84,11 @@ IBM cloudのCloud foundryにソースコードをアップします。
 結果表示
 ![hello3](images/hello3.png)
 
+アプリを削除
+```
+ ibmcloud app delete アプリ名
+```
+
 curl コマンドでも確認できます。
 ```
  curl アプリURL
