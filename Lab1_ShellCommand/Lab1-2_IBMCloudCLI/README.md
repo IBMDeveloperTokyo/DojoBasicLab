@@ -84,15 +84,20 @@ IBM cloudのCloud foundryにソースコードをアップします。
 結果表示
 ![hello3](images/hello3.png)
 
+curl コマンドでも確認できます。
+```
+ curl アプリURL
+```
+アプリを停止
+```
+ ibmcloud app stop アプリ名
+```
 アプリを削除
 ```
  ibmcloud app delete アプリ名
 ```
 
-curl コマンドでも確認できます。
-```
- curl アプリURL
-```
+
 
 その他のコマンド例
 https://cloud.ibm.com/docs/cli?topic=cli-ibmcloud_commands_apps&locale=ja
