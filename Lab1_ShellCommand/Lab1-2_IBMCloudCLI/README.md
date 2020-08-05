@@ -98,7 +98,7 @@ https://cloud.ibm.com/docs/cli?topic=cli-ibmcloud_commands_apps&locale=ja
 IBM Cloud Shell には、コマンドを実行できる個人ワークスペースとセッションが含まれています。 
 最大 5 つの並行セッションを開くことができます。
 
-IBM Cloud Shell を開くには、IBM Cloud コンソールから IBM Cloud Shell アイコン(images/cloudshell02.png) をクリックします。 
+IBM Cloud Shell を開くには、IBM Cloud コンソールから IBM Cloud Shell アイコン ![icon](images/cloudshell02.png) をクリックします。 
 Cloud Shell セッションは、コマンド、スクリプト、その他ツールが実行できます。
 
 ### ディレクトリ構成
@@ -127,7 +127,7 @@ Cloud Shellで使用可能な一時ストレージの容量は500 MBです。
 この問題を回避するために、Cloud Shellには大きなファイルをアップロードしないようにします。
 かつ、rm などのコマンドを使用して未使用ファイルを削除してください。
 
-### 最後に
+### 注意点
 IBM Cloud Shell は、IBM Cloud の管理と開発という目的を想定しています。 
 長時間実行または計算主体のスクリプトやプログラムのサポート、あるいは機密データの処理は想定していません。 
 
