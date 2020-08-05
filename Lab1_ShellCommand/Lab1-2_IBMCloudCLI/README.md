@@ -1,4 +1,4 @@
-# Dojo Basic: Lab1-2 IBM Cloud CLI
+# Dojo Basic: Lab1-2 IBM Cloud CLI基礎
 
 ## 目的とゴール
 ### 目的
@@ -13,7 +13,7 @@
 ### このLabで体験できること
  - ローカル環境（各自のPC）にIBM Cloud CLIをインストールする
  - ローカル環境から、IBM Cloudにアプリケーションを作成する
- - IBM Cloud Shellを使用して、クラウド環境のCLIを操作する
+ - IBM Cloud Shellを使用して、クラウドコンソールのCLIを操作する
 
  
 
@@ -95,15 +95,16 @@ https://cloud.ibm.com/docs/cli?topic=cli-ibmcloud_commands_apps&locale=ja
 # 4. IBM Cloud Shellを操作する
 
 ### 特徴
-IBM® Cloud Shell には、コマンドを実行できる個人ワークスペースとセッションが含まれています。 
+IBM Cloud Shell には、コマンドを実行できる個人ワークスペースとセッションが含まれています。 
 最大 5 つの並行セッションを開くことができます。
 
-IBM Cloud Shell を開くには、IBM Cloud コンソールから IBM Cloud Shell アイコン をクリックします。 
+IBM Cloud Shell を開くには、IBM Cloud コンソールから IBM Cloud Shell アイコン(images/cloudshell02.png) をクリックします。 
 Cloud Shell セッションは、コマンド、スクリプト、その他ツールが実行できます。
 
 ### ディレクトリ構成
 セッションを開く際には、Cloud Shell ワークスペースのホーム・ディレクトリー /home/<user-name> から操作を開始します。 
 ホーム・ディレクトリー内のデータは保持されません。ファイルは削除されます。
+![cloudshell01](images/cloudshell01.png)
 
 ### 保存
 セッションは、1 時間使用されないと自動的に閉じられます。 
