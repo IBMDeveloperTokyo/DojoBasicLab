@@ -243,17 +243,17 @@ accountname@cloudshell:~/dojodir$ diff -c text02.txt text03.txt
 ! hello world !
 ```
 ### 4.4　ダウンロードとアップロード
-作成したファイルは、ダウンロードが可能です。
+作成したファイルは、ダウンロードが可能です。<br>
 コンソール画面のダウンロードボタン![download](images/cloudshell03.png)より、対象ファイル名を指定するとダウンロードされます。
 
-同様に、アップロード![upload](images/cloudshell05.png)も可能です。
-コンソール画面のアップロードボタンより、ファイルを選択することができます。
+同様に、アップロード![upload](images/cloudshell04.png)も可能です。<br>
+コンソール画面のアップロードボタンより、ファイルを選択することができます。<br>
 ＊容量の大きなファイルは既知の障害の原因になるため、残容量を確認の上、アップロードを行い、障害を回避しましょう。
 
 # 5 Node,js アプリケーションの作成(Optional)
 この章では、Cloud Shellからアプリケーションを作成する手順を紹介します。<br>
 
-clearコマンドで一度Cloud Shellの画面をリセットします。
+clearコマンドで一度Cloud Shellの画面をリセットします。<br>
 さらに、cdコマンドでホームに戻ります。
 ```
 clear
@@ -264,7 +264,7 @@ gitコマンドでアプリのソースをホーム・ディレクトリーに�
 git clone https://github.com/IBM/nodejs-express-app.git
 cd nodejs-express-app
 ```
-Node.jsのパッケージ管理ツールnpm(Node Package Manager)をインストールします。
+Node.jsのパッケージ管理ツールnpm(Node Package Manager)をインストールします。<br>
 npmは、Node.jsの便利な機能をまとめたパッケージです。
 ```
 npm install
@@ -273,6 +273,6 @@ npm install
 ```
 npm run start
 ```
-Cloud Shell メニュー・バーの「Web プレビュー (Web preview)」アイコン ![view](images/cloudshell05.png) をクリックします。
+Cloud Shell メニュー・バーの「Web プレビュー (Web preview)」アイコン ![view](images/cloudshell05.png) をクリックします。<br>
 サーバーが指定しているポート’3000’を選択すると、Node.jsのアプリが開きます。
 ![final](images/cloudshell06.png)
