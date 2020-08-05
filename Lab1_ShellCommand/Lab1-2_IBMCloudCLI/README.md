@@ -132,10 +132,10 @@ IBM Cloud Shell は、IBM Cloud の管理と開発という目的を想定して
 長時間実行または計算主体のスクリプトやプログラムのサポート、あるいは機密データの処理は想定していません。 
 
 
-### 4.1.IBM Cloud Shellセッションの開始
+### 4.1 IBM Cloud Shellセッションの開始
 IBM Cloud コンソールからCloud Shell を起動します。
 
-### 4.2.基本的なコマンド操作
+### 4.2 基本的なコマンド操作
 この章では、Lab1-1で扱ったコマンド操作を復習します。<br>
 ls コマンドで カレントディレクトリを確認します。Cloud Shell にlsコマンドを入力します。
 ```
@@ -199,7 +199,7 @@ accountname@cloudshell:~/dojodir$ cat text02.txt
 hello! Cloud Shell again.
 hello! IBM Cloud.
 ```
-### 4.3.　差分チェック
+### 4.3　差分チェック
 この章では、2つのファイルを比較して差分を提示します。<br>
 まず、texr02.txt ファイルのコピーを作成します。
 ```
@@ -242,15 +242,15 @@ accountname@cloudshell:~/dojodir$ diff -c text02.txt text03.txt
   hello! IBM Cloud.
 ! hello world !
 ```
-### 4.4.　ダウンロードとアップロード
+### 4.4　ダウンロードとアップロード
 作成したファイルは、ダウンロードが可能です。
-コンソール画面のダウンロードボタンより、対象ファイル名を指定するとダウンロードされます。
+コンソール画面のダウンロードボタン![download](images/cloudshell03.png)より、対象ファイル名を指定するとダウンロードされます。
 
-同様に、アップロードも可能です。
+同様に、アップロード![upload](images/cloudshell05.png)も可能です。
 コンソール画面のアップロードボタンより、ファイルを選択することができます。
 ＊容量の大きなファイルは既知の障害の原因になるため、残容量を確認の上、アップロードを行い、障害を回避しましょう。
 
-# 5. Node,js アプリケーションの作成(Optional)
+# 5 Node,js アプリケーションの作成(Optional)
 この章では、Cloud Shellからアプリケーションを作成する手順を紹介します。<br>
 
 clearコマンドで一度Cloud Shellの画面をリセットします。
@@ -258,7 +258,7 @@ clearコマンドで一度Cloud Shellの画面をリセットします。
 ```
 clear
 cd ~
-
+```
 gitコマンドでアプリのソースをホーム・ディレクトリーに複製し、cdコマンドでディレクトリを移動します。
 ```
 git clone https://github.com/IBM/nodejs-express-app.git
@@ -273,7 +273,6 @@ npm install
 ```
 npm run start
 ```
-Cloud Shell メニュー・バーの「Web プレビュー (Web preview)」アイコン をクリックします。
-サーバーが指定しているポート’3000’を選択します。
-```
-```
+Cloud Shell メニュー・バーの「Web プレビュー (Web preview)」アイコン ![view](images/cloudshell05.png) をクリックします。
+サーバーが指定しているポート’3000’を選択すると、Node.jsのアプリが開きます。
+![final](images/cloudshell06.png)
