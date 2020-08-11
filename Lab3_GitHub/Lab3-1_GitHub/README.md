@@ -16,6 +16,8 @@
  - Commit, pull Requestを作成
  - 他の人のrepository からfork
  - コードを修正、Pull Requestを行う
+ 参照　https://guides.github.com/activities/hello-world/?fbclid=IwAR2fRgqDpfDh5vUCeYrP_HbNZhT6MoVnFqgRztJoJD0u3QSmSzOC7ieqiRI
 
 # GitHubとは
 
+## 概要
