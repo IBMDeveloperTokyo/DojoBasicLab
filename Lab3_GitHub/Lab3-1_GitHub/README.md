@@ -19,5 +19,8 @@
  参照　https://guides.github.com/activities/hello-world/?fbclid=IwAR2fRgqDpfDh5vUCeYrP_HbNZhT6MoVnFqgRztJoJD0u3QSmSzOC7ieqiRI
 
 # GitHubとは
+GitHubは、バージョン管理とコラボレーションのためのコードホスティングプラットフォームです。GitHub を使えば、どこにいてもプロジェクトで他の開発者と一緒に作業することができます。
+
+このチュートリアルでは、リポジトリ、ブランチ、コミット、プルリクエストといった GitHub の基本的なことを学びます。Hello World リポジトリを作成し、GitHub の Pull Request ワークフローを学びます。
 
 ## 概要
