@@ -55,7 +55,7 @@ main ブランチからブランチを作成するときは、その時点での
 - feature という名前の新しいブランチ (このブランチで 'feature work' をしているので)
 - 機能がメインに統合されるまでの道のり
 
-![githubpng](images/github1.png)
+![githubpng](images/github2-1.png)
 
 ファイルの異なるバージョンを保存したことがありますか？のようなものです。
 
