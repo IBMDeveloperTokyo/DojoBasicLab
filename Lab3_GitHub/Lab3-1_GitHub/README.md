@@ -113,11 +113,13 @@ GitHub の @mention システムをプルリクエストのメッセージに使
 
 プルリクエストを開いて README を変更する
 
-![githubpng](images/github1.png)
-![githubpng](images/github1.png)
-![githubpng](images/github1.png)
-![githubpng](images/github1.png)
-![githubpng](images/github1.png)
+![githubpng](images/github4-1.png)
+![githubpng](images/github4-2.png)
+![githubpng](images/github4-3.png)
+![githubpng](images/github4-4.png)
+![githubpng](images/github4-5.png)
+![githubpng](images/github4-6.png)
+![githubpng](images/github4-7.png)
 
 
 # Step 5. プルリクエストを取り込む（マージする）
