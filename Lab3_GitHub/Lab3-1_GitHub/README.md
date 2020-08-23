@@ -118,11 +118,6 @@ GitHub の @mention システムをプルリクエストのメッセージに使
 ![githubpng](images/github4-1.png)
 ![githubpng](images/github4-2.png)
 ![githubpng](images/github4-3.png)
-![githubpng](images/github4-4.png)
-![githubpng](images/github4-5.png)
-![githubpng](images/github4-6.png)
-![githubpng](images/github4-7.png)
-
 
 # Step 5. プルリクエストを取り込む（マージする）
 この最後のステップでは、あなたの変更をまとめる時が来ました - readme-edits ブランチをメインブランチにマージします。
@@ -131,8 +126,8 @@ GitHub の @mention システムをプルリクエストのメッセージに使
 - 2. マージの確認をクリックします。
 - 3. 変更が反映されたので、紫色のボックスにある Delete branch ボタンをクリックしてブランチを削除してください。
 
-![githubpng](images/github4-6.png)
-![githubpng](images/github4-7.png)
+![githubpng](images/github4-3.png)
+![githubpng](images/github4-4.png)
 ![githubpng](images/github4-5.png)
 ![githubpng](images/github4-6.png)
 ![githubpng](images/github4-7.png)
