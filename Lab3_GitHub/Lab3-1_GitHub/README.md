@@ -32,14 +32,13 @@ GitHubは、バージョン管理とコラボレーションのためのコー�
 
 ## 新しいリポジトリを作成するには
 - 1 右上隅にあるアバターや識別子の横にある、クリックしてから新しいリポジトリを選択します。
-![githubpng](images/github1-1.png)
 <img src="images/github1-1.png" width="*320px">
 
 - 2 リポジトリの名前を hello-world とします。
 - 3 簡単な説明を書きます。
 - 4 このリポジトリを README で初期化するを選択します。
 
-![githubpng](images/github1-2.png)
+<img src="images/github1-2.png" width="*320px">
 
 "Create Repository"をクリックしてください。
 
@@ -56,7 +55,7 @@ main ブランチからブランチを作成するときは、その時点での
 - feature という名前の新しいブランチ (このブランチで 'feature work' をしているので)
 - 機能がメインに統合されるまでの道のり
 
-![githubpng](images/github2-1.png)
+<img src="images/github2-1.png" width="*320px">
 
 ファイルの異なるバージョンを保存したことがありますか？のようなものです。
 
@@ -73,9 +72,9 @@ main ブランチからブランチを作成するときは、その時点での
 新しいブランチのテキストボックスにブランチ名を readme-edits と入力します。
 青色の Create branch ボックスを選択するか、キーボードの "Enter" を押してください。
 
-![githubpng](images/github2-2.png)
+<img src="images/github2-1.png" width="*320px">
 
-![githubpng](images/github2-3.png)
+<img src="images/github2-3.png" width="*320px">
 
 これでmainとreadme-editsの2つのブランチができました。見た目は全く同じですが、長くはありません! 次に、新しいブランチに変更点を追加します。
 
@@ -87,18 +86,17 @@ GitHub では、保存された変更をコミットと呼びます。それぞ�
 変更の作成とコミット
 - 1. README.mdファイルをクリックします。
 - 2. ファイルビューの右上にある鉛筆のアイコンをクリックして編集します。
-![githubpng](images/github3-1.png)
-<img src="mages/github3-1.png" width="320px">
+<img src="images/github3-1.png" width="*320px">
 
 - 3. エディタでは、自分のことを少し書いてください。
-![githubpng](images/github3-2.png)
+<img src="images/github3-2.png" width="*320px">
 
 - 4. 変更内容を記述したコミットメッセージを書きます。
-![githubpng](images/github3-3.png)
+<img src="images/github3-3.png" width="*320px">
 
 - 5.変更をコミットするボタンをクリックします。
 
-![githubpng](images/github3-4.png)
+<img src="images/github3-4.png" width="*320px">
 
 これらの変更は readme-edits ブランチの readme ファイルだけに行われるので、このブランチには main とは異なる内容が含まれます。
 
@@ -115,8 +113,8 @@ GitHub の @mention システムをプルリクエストのメッセージに使
 
 プルリクエストを開いて README を変更する
 
-![githubpng](images/github4-1.png)
-![githubpng](images/github4-2.png)
+<img src="images/github4-1.png" width="*320px">
+<img src="images/github4-2.png" width="*320px">
 
 # Step 5. プルリクエストを取り込む（マージする）
 この最後のステップでは、あなたの変更をまとめる時が来ました - readme-edits ブランチをメインブランチにマージします。
@@ -125,11 +123,11 @@ GitHub の @mention システムをプルリクエストのメッセージに使
 - 2. マージの確認をクリックします。
 - 3. 変更が反映されたので、紫色のボックスにある Delete branch ボタンをクリックしてブランチを削除してください。
 
-![githubpng](images/github4-3.png)
-![githubpng](images/github4-4.png)
-![githubpng](images/github4-5.png)
-![githubpng](images/github4-6.png)
-![githubpng](images/github4-7.png)
+<img src="images/github4-3.png" width="*320px">
+<img src="images/github4-4.png" width="*320px">
+<img src="images/github4-5.png" width="*320px">
+<img src="images/github4-6.png" width="*320px">
+<img src="images/github4-7.png" width="*320px">
 
 お祝いしましょう!
 このチュートリアルが完了したことで、プロジェクトを作成して GitHub でプルリクエストを行う方法を学びました。
@@ -151,14 +149,14 @@ GitHubは、バージョン管理とコラボレーションのためのコー�
 
 # プルリクエストその２
 
-![githubpng](images/fork1.png)
-![githubpng](images/fork2.png)
-![githubpng](images/fork3.png)
-![githubpng](images/fork4-edit.png)
-![githubpng](images/fork5-commit.png)
-![githubpng](images/merge1.png)
-![githubpng](images/merge2.png)
-![githubpng](images/pull-req1.png)
-![githubpng](images/pull-req2.png)
-![githubpng](images/pull-req3.png)
-![githubpng](images/pull-req4.png)
+<img src="images/fork1.png" width="*320px">
+<img src="images/fork2.png" width="*320px">
+<img src="images/fork3.png" width="*320px">
+<img src="images/fork4.png" width="*320px">
+<img src="images/fork5.png" width="*320px">
+<img src="images/merge1.png" width="*320px">
+<img src="images/merge2.png" width="*320px">
+<img src="images/pull-req1.png" width="*320px">
+<img src="images/pull-req2.png" width="*320px">
+<img src="images/pull-req3.png" width="*320px">
+<img src="images/pull-req4.png" width="*320px">
