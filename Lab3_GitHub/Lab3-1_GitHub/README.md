@@ -117,7 +117,6 @@ GitHub の @mention システムをプルリクエストのメッセージに使
 
 ![githubpng](images/github4-1.png)
 ![githubpng](images/github4-2.png)
-![githubpng](images/github4-3.png)
 
 # Step 5. プルリクエストを取り込む（マージする）
 この最後のステップでは、あなたの変更をまとめる時が来ました - readme-edits ブランチをメインブランチにマージします。
