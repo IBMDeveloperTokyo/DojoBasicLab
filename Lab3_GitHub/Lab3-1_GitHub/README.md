@@ -72,7 +72,7 @@ main ブランチからブランチを作成するときは、その時点での
 新しいブランチのテキストボックスにブランチ名を readme-edits と入力します。
 青色の Create branch ボックスを選択するか、キーボードの "Enter" を押してください。
 
-![githubpng](images/github1.png)
+![githubpng](images/github2-2.png)
 
 これでmainとreadme-editsの2つのブランチができました。見た目は全く同じですが、長くはありません! 次に、新しいブランチに変更点を追加します。
 
