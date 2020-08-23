@@ -150,4 +150,14 @@ GitHubは、バージョン管理とコラボレーションのためのコー�
 
 #　プルリクエストその２
 
-![githubpng](images/github1.png)
+![githubpng](images/fork1.png)
+![githubpng](images/fork2.png)
+![githubpng](images/fork3.png)
+![githubpng](images/fork4-edit.png)
+![githubpng](images/fork5-commit.png)
+![githubpng](images/merge1.png)
+![githubpng](images/merge2.png)
+![githubpng](images/pull-req1.png)
+![githubpng](images/pull-req2.png)
+![githubpng](images/pull-req3.png)
+![githubpng](images/pull-req4.png)
