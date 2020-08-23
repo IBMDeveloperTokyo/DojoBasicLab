@@ -1,4 +1,4 @@
-# Dojo Basic: Lab1-2 GitHub基礎
+# Dojo Basic: Lab3-1 GitHub基礎
 
 ## 目的とゴール
 ### 目的
