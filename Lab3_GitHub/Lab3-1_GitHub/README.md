@@ -92,6 +92,8 @@ GitHub では、保存された変更をコミットと呼びます。それぞ�
 ![githubpng](images/github3-2.png)
 
 - 4. 変更内容を記述したコミットメッセージを書きます。
+![githubpng](images/github3-3.png)
+
 - 5.変更をコミットするボタンをクリックします。
 
 ![githubpng](images/github1.png)
