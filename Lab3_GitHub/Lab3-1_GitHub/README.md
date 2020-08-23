@@ -131,7 +131,9 @@ GitHub の @mention システムをプルリクエストのメッセージに使
 - 2. マージの確認をクリックします。
 - 3. 変更が反映されたので、紫色のボックスにある Delete branch ボタンをクリックしてブランチを削除してください。
 
-![githubpng](images/github1.png)
+![githubpng](images/github4-5.png)
+![githubpng](images/github4-6.png)
+![githubpng](images/github4-7.png)
 
 お祝いしましょう!
 このチュートリアルが完了したことで、プロジェクトを作成して GitHub でプルリクエストを行う方法を学びました。
