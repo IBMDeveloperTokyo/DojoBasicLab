@@ -119,9 +119,9 @@ GitHub の @mention システムをプルリクエストのメッセージに使
 # Step 5. プルリクエストを取り込む（マージする）
 この最後のステップでは、あなたの変更をまとめる時が来ました - readme-edits ブランチをメインブランチにマージします。
 
-- mainブランチを洗濯してください
+- mainブランチを選択してください
 <img src="images/github4-3.png" width="*320px">
-- "Pull requests"を洗濯してください。先ほどのプルリクエスト"Update README.md"をクリックしてください。
+- "Pull requests"を選択してください。先ほどのプルリクエスト"Update README.md"をクリックしてください。
 <img src="images/github4-4.png" width="*320px">
 - 問題なければ"Merge pull request"をクリックしてください
 <img src="images/github4-5.png" width="*320px">
