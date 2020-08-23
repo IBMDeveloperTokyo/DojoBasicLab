@@ -87,6 +87,7 @@ GitHub では、保存された変更をコミットと呼びます。それぞ�
 - 1. README.mdファイルをクリックします。
 - 2. ファイルビューの右上にある鉛筆のアイコンをクリックして編集します。
 ![githubpng](images/github3-1.png)
+<img src="mages/github3-1.png" width="320px">
 
 - 3. エディタでは、自分のことを少し書いてください。
 ![githubpng](images/github3-2.png)
