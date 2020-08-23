@@ -32,7 +32,7 @@ GitHubは、バージョン管理とコラボレーションのためのコー�
 
 ## 新しいリポジトリを作成するには
 - GitHubページ(https://github.com/)にログインしてください。画面の左上にご自分の名前、"Repositories"の右側の"New"をクリックしてください。
-<img src="images/github1-1.png" width="*320px">
+<kbd><img src="images/github1-1.png" width="*320px"></kbd>
 
 - ① リポジトリの名前を hello-world とします。
 - ② このリポジトリを README で初期化するを選択します。
@@ -55,7 +55,7 @@ mainブランチからブランチを作成するときは、その時点での 
 - readme-edits という名前の新しいブランチ
 - 修正をmainに統合するまでの流れ
 
-<img src="images/github2-1.png" width="*320px">
+<kbd><img src="images/github2-1.png" width="*320px"></kbd>
 
 共同作業でファイルの異なるバージョンを保存したことがありますか？　例えると以下のようにファイル名を変えて管理していくような感じです。
 
@@ -71,10 +71,10 @@ mainブランチからブランチを作成するときは、その時点での 
 ①　新しいブランチのテキストボックスにブランチ名を readme-edits と入力します。
 ②　Create branch readme-editsをクリックしてください。
 
-<img src="images/github2-2.png" width="*320px">
+<kbd><img src="images/github2-2.png" width="*320px"></kbd>
 
 ブランチが"readme-edits"に変わったのがわかります。README>mdの内容は変わりません。
-<img src="images/github2-3.png" width="*320px">
+<kbd><img src="images/github2-3.png" width="*320px"></kbd>
 
 これでmainとreadme-editsの2つのブランチができました。見た目は全く同じですが、次に新しいブランチに変更点を追加します。
 
@@ -85,17 +85,17 @@ GitHub では、編集して保存することをコミットと呼びます。�
 
 変更の作成とコミット
 - 1 ファイルビューの右上にある鉛筆のアイコンをクリックして編集します。
-<img src="images/github3-1.png" width="*320px">
+<kbd><img src="images/github3-1.png" width="*320px">
 
 - 2 何か文章を追加してみてください。
-<img src="images/github3-2.png" width="*320px">
+<kbd><img src="images/github3-2.png" width="*320px"></kbd>
 
 - 4 追加した内容にコメントを書いておきましょう。
-<img src="images/github3-3.png" width="*320px">
+<kbd><img src="images/github3-3.png" width="*320px"></kbd>
 
 - 5.変更をコミットするボタンをクリックします。
 
-<img src="images/github3-4.png" width="*320px">
+<kbd><img src="images/github3-4.png" width="*320px"></kbd>
 
 これらの変更は readme-edits ブランチの readme ファイルだけに行われるので、このブランチには main とは異なる内容が含まれます。
 
@@ -110,25 +110,25 @@ GitHub の @mention システムをプルリクエストのメッセージに使
 
 ①pull requestを選択、　②　"Create a pull request"をクリックしてください。
 
-<img src="images/github4-1.png" width="*320px">
+<kbd><img src="images/github4-1.png" width="*320px"></kbd>
 
 今回のプルリクエストに関するコメントを書いてください。
-<img src="images/github4-2.png" width="*320px">
+<kbd><img src="images/github4-2.png" width="*320px"></kbd>
 "Create a pull request"でmainブランチへの変更依頼(pull request)を遅れます。
 
 # Step 5. プルリクエストを取り込む（マージする）
 この最後のステップでは、あなたの変更をまとめる時が来ました - readme-edits ブランチをメインブランチにマージします。
 
 - mainブランチを選択してください
-<img src="images/github4-3.png" width="*320px">
+<kbd><img src="images/github4-3.png" width="*320px"></kbd>
 - "Pull requests"を選択してください。先ほどのプルリクエスト"Update README.md"をクリックしてください。
-<img src="images/github4-4.png" width="*320px">
+<kbd><img src="images/github4-4.png" width="*320px"></kbd>
 - 問題なければ"Merge pull request"をクリックしてください
-<img src="images/github4-5.png" width="*320px">
+<kbd><img src="images/github4-5.png" width="*320px"></kbd>
 - "Confirm merge"をクリックしてください
-<img src="images/github4-6.png" width="*320px">
+<kbd><img src="images/github4-6.png" width="*320px"></kbd>
 - readme.editsでの変更が反映されましたね。
-<img src="images/github4-7.png" width="*320px">
+<kbd><img src="images/github4-7.png" width="*320px"></kbd>
 
 お疲れ様でした!
 このチュートリアルが完了したことで、プロジェクトを作成して GitHub でプルリクエストを行う方法を学びました。
@@ -154,20 +154,20 @@ GitHubは、バージョン管理とコラボレーションのためのコー�
 GitHubにサインインした後にへターゲットのレポジトリーをに行ってください。　（ここでは例としてhttps://github.com/osonoi/hello-world2)　"osonoi"と言うアカウントの"Hello-world"をフォークします。
 
 右上にある"Fork"をクリックしてください。
-<img src="images/fork1.png" width="*320px">
+<kbd><img src="images/fork1.png" width="*320px"></kbd>
 フォークしたい自分のアカウントを選択します。(この場合はosonoi-hotと言うアカウントでログインしています）
-<img src="images/fork2.png" width="*320px">
+<kbd>v<img src="images/fork2.png" width="*320px"></kbd>
 先ほどのレポジトリーが自分のレポジトリーとして編集できるようになりました。右側のペンのアイコンをクリックして編集しましょう
-<img src="images/fork3.png" width="*320px">
+<kbd><img src="images/fork3.png" width="*320px"></kbd>
 新しいテキストを入力します。
-<img src="images/fork4-edit.png" width="*320px">
+<kbd><img src="images/fork4-edit.png" width="*320px"></kbd>
 変更をコミットします。
-<img src="images/fork5-commit.png" width="*320px">
+<kbd><img src="images/fork5-commit.png" width="*320px"></kbd>
 変更が反映されましたね。ご自分（ここでは(osonoi-hot)のレポジトリーの内容が変更されました。
-<img src="images/pull-req1.png" width="*320px">
+<kbd><img src="images/pull-req1.png" width="*320px"></kbd>
 "Pull-request"をしてみましょう。上のメニューから"Pull-requests"を選んで
-<img src="images/pull-req2.png" width="*320px">
+<kbd><img src="images/pull-req2.png" width="*320px"></kbd>
 "Create pull resuest"をクリック
-<img src="images/pull-req3.png" width="*320px">
+<kbd><img src="images/pull-req3.png" width="*320px"></kbd>
 コメント追加して"Pull request"をクリック
-<img src="images/pull-req4.png" width="*320px">
+<kbd><img src="images/pull-req4.png" width="*320px"></kbd>
