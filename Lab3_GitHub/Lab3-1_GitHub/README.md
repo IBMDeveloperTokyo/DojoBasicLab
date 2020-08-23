@@ -131,6 +131,8 @@ GitHub の @mention システムをプルリクエストのメッセージに使
 - 2. マージの確認をクリックします。
 - 3. 変更が反映されたので、紫色のボックスにある Delete branch ボタンをクリックしてブランチを削除してください。
 
+![githubpng](images/github4-6.png)
+![githubpng](images/github4-7.png)
 ![githubpng](images/github4-5.png)
 ![githubpng](images/github4-6.png)
 ![githubpng](images/github4-7.png)
