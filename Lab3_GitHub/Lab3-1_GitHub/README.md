@@ -149,15 +149,25 @@ GitHubは、バージョン管理とコラボレーションのためのコー�
 
 
 # プルリクエストその２
+　上記の例では自分が作ったリポジトリーあるいはリポジトリーの編集権限がある場合の例です。ここではその権限がない場合、他の人のレポジトリーにプルリクエストする場合の手順をご紹介します。
+この時に使われるのが”フォーク(fork)”と呼ばれる機能です。
+GitHubにサインインした後にへターゲットのレポジトリーをに行ってください。　（ここでは例としてhttps://github.com/osonoi/hello-world2)　"osonoi"と言うアカウントの"Hello-world"をフォークします。
 
+右上にある"Fork"をクリックしてください。
 <img src="images/fork1.png" width="*320px">
+フォークしたい自分のアカウントを選択します。(この場合はosonoi-hotと言うアカウントでログインしています）
 <img src="images/fork2.png" width="*320px">
+先ほどのレポジトリーが自分のレポジトリーとして編集できるようになりました。右側のペンのアイコンをクリックして編集しましょう
 <img src="images/fork3.png" width="*320px">
-<img src="images/fork4.png" width="*320px">
-<img src="images/fork5.png" width="*320px">
-<img src="images/merge1.png" width="*320px">
-<img src="images/merge2.png" width="*320px">
+新しいテキストを入力します。
+<img src="images/fork4-edit.png" width="*320px">
+変更をコミットします。
+<img src="images/fork5-commit.png" width="*320px">
+変更が反映されましたね。ご自分（ここでは(osonoi-hot)のレポジトリーの内容が変更されました。
 <img src="images/pull-req1.png" width="*320px">
+"Pull-request"をしてみましょう。上のメニューから"Pull-requests"を選んで
 <img src="images/pull-req2.png" width="*320px">
+"Create pull resuest"をクリック
 <img src="images/pull-req3.png" width="*320px">
+コメント追加して"Pull request"をクリック
 <img src="images/pull-req4.png" width="*320px">
