@@ -32,6 +32,7 @@ GitHubは、バージョン管理とコラボレーションのためのコー�
 
 ## 新しいリポジトリを作成するには
 - GitHubページ(https://github.com/)にログインしてください。画面の左上にご自分の名前、"Repositories"の右側の"New"をクリックしてください。
+
 <kbd><img src="images/github1-1.png" width="*160px"></kbd>
 
 - ① リポジトリの名前を hello-world とします。
