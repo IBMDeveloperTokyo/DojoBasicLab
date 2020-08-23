@@ -74,6 +74,8 @@ main ブランチからブランチを作成するときは、その時点での
 
 ![githubpng](images/github2-2.png)
 
+![githubpng](images/github2-3.png)
+
 これでmainとreadme-editsの2つのブランチができました。見た目は全く同じですが、長くはありません! 次に、新しいブランチに変更点を追加します。
 
 # Step 3. 変更してコミットしましょう
