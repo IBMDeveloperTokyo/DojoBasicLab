@@ -38,7 +38,7 @@ GitHubは、バージョン管理とコラボレーションのためのコー�
 - ② このリポジトリを README で初期化するを選択します。
 - ③ "Create Repository"をクリックしてください。
 
-<img src="images/github1-2.png" width="*320px">
+<kbd><img src="images/github1-2.png" width="*320px"></kbd>
 
 
 
