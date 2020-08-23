@@ -96,7 +96,7 @@ GitHub では、保存された変更をコミットと呼びます。それぞ�
 
 - 5.変更をコミットするボタンをクリックします。
 
-![githubpng](images/github1.png)
+![githubpng](images/github3-4.png)
 
 これらの変更は readme-edits ブランチの readme ファイルだけに行われるので、このブランチには main とは異なる内容が含まれます。
 
