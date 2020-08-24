@@ -177,7 +177,7 @@ GitHubにサインインした後にへターゲットのレポジトリーに�
 
 <kbd><img src="images/fork5-commit.png" width="640px"></kbd>
 
-- 変更が反映されましたね。ご自分（ここでは(osonoi-hot)のレポジトリーの内容が変更されました。
+- 変更が反映されましたね。ご自分（ここでは(ymatsunami)のレポジトリーの内容が変更されました。
 
 <kbd><img src="images/pull-req1.png" width="640px"></kbd>
 
@@ -190,4 +190,5 @@ GitHubにサインインした後にへターゲットのレポジトリーに�
 <kbd><img src="images/pull-req3.png" width="640px"></kbd>
 
 - コメント追加して"Pull request"をクリック
+
 <kbd><img src="images/pull-req4.png" width="640px"></kbd>
