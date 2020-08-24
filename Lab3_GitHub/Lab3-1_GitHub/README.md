@@ -34,13 +34,14 @@ GitHubは、バージョン管理とコラボレーションのためのコー�
 これから最初のレポジトリ　”hello-world”を作っていきましょう。
 
 ## 新しいリポジトリを作成するには
-- GitHubページ(https://github.com/)にログインしてください。画面の左上にご自分の名前、"Repositories"の右側の"New"をクリックしてください。
+- GitHubページ(https://github.com/)にログインしてください。
+- 画面の左上にご自分の名前、"Repositories"の右側の"New"をクリックしてください。
 
 <kbd><img src="images/github1-1.png" width="300px"></kbd>
 
-- ① リポジトリの名前を hello-world とします。
-- ② このリポジトリを README で初期化するを選択します。
-- ③ "Create Repository"をクリックしてください。
+- リポジトリの名前を hello-world とします。
+- このリポジトリを README で初期化するを選択します。
+- "Create Repository"をクリックしてください。
 
 <kbd><img src="images/github1-2.png" width="640px"></kbd>
 
@@ -49,33 +50,33 @@ GitHubは、バージョン管理とコラボレーションのためのコー�
 #  Step 2. ブランチを作る
 ブランチとは、リポジトリの異なるバージョンの作業を行う方法です。
 
-デフォルトでは、リポジトリには mainという名前のブランチがあります。meinブランチにコミット(書き込み）する前にデバッグ、テストをしたり、編集をしたりするためにブランチを使います。
+デフォルトでは、リポジトリには masterという名前のメインブランチがあります。masterブランチにコミット(書き込み）する前にデバッグ、テストをしたり、編集をしたりするためにブランチを使います。
 
-mainブランチからブランチを作成するときは、その時点での mainのコピー、つまりスナップショットを作成することになります。あなたがブランチで作業をしている間に誰かがメインブランチに変更を加えた場合でも、その更新を取り込むことができます。
+masterブランチからブランチを作成するときは、その時点での masterのコピー、つまりスナップショットを作成することになります。あなたがブランチで作業をしている間に誰かがメインブランチに変更を加えた場合でも、その更新を取り込むことができます。
 
 この図を見てください。
 
-- メインブランチ
+- masterブランチ
 - readme-edits という名前の新しいブランチ
-- 修正をmainに統合するまでの流れ
+- 修正をmainブランチに統合するまでの流れ
 
-<kbd><img src="images/github2-1.png" width="640px"></kbd>
+<kbd><img src="images/github2-1.png" ></kbd>
 
-共同作業でファイルの異なるバージョンを保存したことがありますか？　例えると以下のようにファイル名を変えて管理していくような感じです。
+共同作業でファイルの異なるバージョンのファイルを保存したことがありますか？　例えると以下のようにファイル名を変えて管理していくような感じです。
 
 - story.txt
-- ストーリージョー編集.txt
-- ストーリージョウ編集部レビュー済みtxt
+- story-test.txt
+- story-202008.txt
 ブランチは、GitHub のリポジトリでも同じような目的を達成することができます。
 
 ここGitHubでは、開発者、ライター、デザイナーがブランチを使ってバグ修正や機能追加の作業をメインブランチとは別に行っています。変更の準備ができたら、ブランチをメインブランチにマージします。
 
 ## 新しいブランチを作る
 リストの左上にある branch: main というドロップダウンをクリックします。
-①　新しいブランチのテキストボックスにブランチ名を readme-edits と入力します。
-②　Create branch readme-editsをクリックしてください。
+- 新しいブランチのテキストボックスにブランチ名を readme-edits と入力します。
+- Create branch readme-editsをクリックしてください。
 
-<kbd><img src="images/github2-2.png" width="640px"></kbd>
+<kbd><img src="images/github2-2.png" width="400px"></kbd>
 
 ブランチが"readme-edits"に変わったのがわかります。README>mdの内容は変わりません。
 <kbd><img src="images/github2-3.png" width="640px"></kbd>
@@ -92,14 +93,12 @@ GitHub では、編集して保存することをコミットと呼びます。�
 <kbd><img src="images/github3-1.png" width="640px">
 
 - 2 何か文章を追加してみてください。
-
 <kbd><img src="images/github3-2.png" width="640px"></kbd>
 
 - 4 追加した内容にコメントを書いておきましょう。
 <kbd><img src="images/github3-3.png" width="640px"></kbd>
 
 - 5.変更をコミットするボタンをクリックします。
-
 <kbd><img src="images/github3-4.png" width="640px"></kbd>
 
 これらの変更は readme-edits ブランチの readme ファイルだけに行われるので、このブランチには main とは異なる内容が含まれます。
@@ -113,7 +112,8 @@ GitHub では、編集して保存することをコミットと呼びます。�
 
 GitHub の @mention システムをプルリクエストのメッセージに使えば、特定の人やチームにフィードバックを求めることができます。
 
-①pull requestを選択、　②　"Create a pull request"をクリックしてください。
+- pull requestを選択、　
+- "Create a pull request"をクリックしてください。
 
 <kbd><img src="images/github4-1.png" width="640px"></kbd>
 
@@ -133,7 +133,7 @@ GitHub の @mention システムをプルリクエストのメッセージに使
 <kbd><img src="images/github4-5.png" width="640px"></kbd>
 - "Confirm merge"をクリックしてください
 
-<kbd><img src="images/github4-6.png" width="640px"></kbd>
+<kbd><img src="images/github4-6.png" width="400px"></kbd>
 - readme.editsでの変更が反映されましたね。
 
 <kbd><img src="images/github4-7.png" width="640px"></kbd>
