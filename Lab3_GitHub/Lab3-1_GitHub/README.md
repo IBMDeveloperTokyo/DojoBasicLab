@@ -162,24 +162,31 @@ GitHubにサインインした後にへターゲットのレポジトリーに�
 
 <kbd><img src="images/fork1.png" width="640px"></kbd>
 - フォークしたい自分のアカウントを選択します。(この場合はymatsunamiと言うアカウントでログインしています）
+
 <kbd>v<img src="images/fork2.png" width="640px"></kbd>
 
 - 先ほどのレポジトリーが自分のレポジトリーとして編集できるようになりました。右側のペンのアイコンをクリックして編集しましょう
+
 <kbd><img src="images/fork3.png" width="640px"></kbd>
 
 - 新しいテキストを入力します。
+
 <kbd><img src="images/fork4-edit.png" width="640px"></kbd>
 
 - 変更をコミットします。
+
 <kbd><img src="images/fork5-commit.png" width="640px"></kbd>
 
 - 変更が反映されましたね。ご自分（ここでは(osonoi-hot)のレポジトリーの内容が変更されました。
+
 <kbd><img src="images/pull-req1.png" width="640px"></kbd>
 
 - "Pull-request"をしてみましょう。上のメニューから"Pull-requests"を選んで
+
 <kbd><img src="images/pull-req2.png" width="640px"></kbd>
 
 - "Create pull resuest"をクリック
+
 <kbd><img src="images/pull-req3.png" width="640px"></kbd>
 
 - コメント追加して"Pull request"をクリック
