@@ -2,10 +2,10 @@
 
 ## 目的とゴール
 ### 目的
- - GitHubを使ったソフトウェア管理を体験します。
+ - GitHubを使ったコード、ドキュメント管理を体験します。
 
 ### ゴール
- - GitHubでソースコードの管理、共同作業を行える様にする。
+ - GitHubでコード、ドキュメントの管理、共同作業を行える様にする。
 
 ### このLabの実施前提
  - GitHubのアカウントを持っていること
@@ -16,7 +16,10 @@
  - コミット(Commit), プルリクエスト(pull Request)を行う
  - 他の人のrepository からfork
  - コードを修正、Pull Requestを行う
- 参照　https://guides.github.com/activities/hello-world/?fbclid=IwAR2fRgqDpfDh5vUCeYrP_HbNZhT6MoVnFqgRztJoJD0u3QSmSzOC7ieqiRI
+ 
+ 参照
+- GitHub ウェブサイト　https://github.com/
+- 本日の元ネタ(英語)　https://guides.github.com/activities/hello-world/?fbclid=IwAR2fRgqDpfDh5vUCeYrP_HbNZhT6MoVnFqgRztJoJD0u3QSmSzOC7ieqiRI
 
 # GitHubとは
 GitHubは、バージョン管理とコラボレーションのためのコードホスティングプラットフォームです。GitHub を使えば、どこにいてもプロジェクトで他の開発者と一緒に作業することができます。
