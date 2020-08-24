@@ -119,6 +119,7 @@ GitHub の @mention システムをプルリクエストのメッセージに使
 
 今回のプルリクエストに関するコメントを書いてください。
 <kbd><img src="images/github4-2.png" width="640px"></kbd>
+
 "Create a pull request"でmainブランチへの変更依頼(pull request)を遅れます。
 
 # Step 5. プルリクエストを取り込む（マージする）
