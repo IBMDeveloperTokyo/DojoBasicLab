@@ -153,36 +153,34 @@ Pull Requests の力について詳しく知りたい場合は、GitHub のフ�
 
 https://guides.github.com/introduction/flow/
 
-# プルリクエストその２
+# フォークおよびプルリクエスト
 　上記の例では自分が作ったリポジトリーあるいはリポジトリーの編集権限がある場合の例です。ここではその権限がない場合、他の人のレポジトリーにプルリクエストする場合の手順をご紹介します。
 この時に使われるのが”フォーク(fork)”と呼ばれる機能です。
-GitHubにサインインした後にへターゲットのレポジトリーをに行ってください。　（ここでは例としてhttps://github.com/osonoi/hello-world2)　"osonoi"と言うアカウントの"Hello-world"をフォークします。
+GitHubにサインインした後にへターゲットのレポジトリーに行ってください。　（ここでは例としてhttps://github.com/osonoi/hello-world2)　"osonoi"と言うアカウントの"Hello-world"をフォークします。
 
 右上にある"Fork"をクリックしてください。
 
 <kbd><img src="images/fork1.png" width="640px"></kbd>
-フォークしたい自分のアカウントを選択します。(この場合はosonoi-hotと言うアカウントでログインしています）
-
+- フォークしたい自分のアカウントを選択します。(この場合はymatsunamiと言うアカウントでログインしています）
 <kbd>v<img src="images/fork2.png" width="640px"></kbd>
-先ほどのレポジトリーが自分のレポジトリーとして編集できるようになりました。右側のペンのアイコンをクリックして編集しましょう
 
+- 先ほどのレポジトリーが自分のレポジトリーとして編集できるようになりました。右側のペンのアイコンをクリックして編集しましょう
 <kbd><img src="images/fork3.png" width="640px"></kbd>
-新しいテキストを入力します。
 
+- 新しいテキストを入力します。
 <kbd><img src="images/fork4-edit.png" width="640px"></kbd>
-変更をコミットします。
 
+- 変更をコミットします。
 <kbd><img src="images/fork5-commit.png" width="640px"></kbd>
 
-変更が反映されましたね。ご自分（ここでは(osonoi-hot)のレポジトリーの内容が変更されました。
+- 変更が反映されましたね。ご自分（ここでは(osonoi-hot)のレポジトリーの内容が変更されました。
 <kbd><img src="images/pull-req1.png" width="640px"></kbd>
 
-"Pull-request"をしてみましょう。上のメニューから"Pull-requests"を選んで
-
+- "Pull-request"をしてみましょう。上のメニューから"Pull-requests"を選んで
 <kbd><img src="images/pull-req2.png" width="640px"></kbd>
-"Create pull resuest"をクリック
 
+- "Create pull resuest"をクリック
 <kbd><img src="images/pull-req3.png" width="640px"></kbd>
-コメント追加して"Pull request"をクリック
 
+- コメント追加して"Pull request"をクリック
 <kbd><img src="images/pull-req4.png" width="640px"></kbd>
