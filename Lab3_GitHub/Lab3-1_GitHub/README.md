@@ -129,7 +129,7 @@ GitHub の @mention システムをプルリクエストのメッセージに使
 
 <kbd><img src="images/github4-3.png" width="640px"></kbd>
 - "Pull requests"を選択してください。先ほどのプルリクエスト"Update README.md"をクリックしてください。
-<kbd><img src="images/github4-4.png" width="*320px"></kbd>
+<kbd><img src="images/github4-4.png" width="0px"></kbd>
 - 問題なければ"Merge pull request"をクリックしてください
 <kbd><img src="images/github4-5.png" width="640px"></kbd>
 - "Confirm merge"をクリックしてください
