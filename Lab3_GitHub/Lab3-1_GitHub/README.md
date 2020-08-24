@@ -157,12 +157,13 @@ https://guides.github.com/introduction/flow/
 フォークとはリポジトリのコピーのことです。 リポジトリをフォークすることにより、オリジナルのプロジェクトに影響を与えることなく変更を自由にテストできます。
 またコピーした後にオリジナルの他の人の作ったコードにプルリクエストを出して変更を取り込んでもらうことも可能です。
 
-GitHubにサインインした後にへターゲットのレポジトリーに行ってください。　（ここでは例としてhttps://github.com/osonoi/hello-world2)　"osonoi"と言うアカウントの"Hello-world"をフォークします。
+GitHubにサインインした後にへターゲットのレポジトリーに行ってください。　（ここでは例としてhttps://github.com/osonoi/hello-world2)
+"osonoi"と言うアカウントの"Hello-world"をフォークします。
 
 右上にある"Fork"をクリックしてください。
 
 <kbd><img src="images/fork1.png" width="640px"></kbd>
-- フォークしたい自分のアカウントを選択します。(この場合はymatsunamiと言うアカウントでログインしています）
+- フォークが始まります。(ここではymatsunamiと言うアカウントでログインしています）
 
 <kbd>v<img src="images/fork2.png" width="640px"></kbd>
 
