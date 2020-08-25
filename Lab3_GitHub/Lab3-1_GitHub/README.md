@@ -22,7 +22,15 @@
 - 本日の元ネタ(英語)　https://guides.github.com/activities/hello-world/?fbclid=IwAR2fRgqDpfDh5vUCeYrP_HbNZhT6MoVnFqgRztJoJD0u3QSmSzOC7ieqiRI
 
 # GitHubとは
-GitHubは、バージョン管理とコラボレーションのためのコードホスティングプラットフォームです。GitHub を使えば、どこにいてもプロジェクトで他の開発者と一緒に作業することができます。
+GitHubは、ソースコードのバージョン管理ツール、"Git"を利用した開発者を支援するWebサービスで、
+バージョン管理とコラボレーションのためのコードホスティングプラットフォームです。GitHub を使えば、どこにいてもプロジェクトで他の開発者と一緒に作業することができます。
+
+OSSの例
+- Linux (https://github.com/torvalds/linux)
+- Kubernetes (https://github.com/kubernetes/kubernetes)
+- OpenWhisk (https://github.com/apache/openwhisk)
+- Node-Red (https://github.com/node-red/node-red)
+- Ruby (https://github.com/ruby/ruby)
 
 このチュートリアルでは、リポジトリ、ブランチ、コミット、プルリクエストといった GitHub の基本的なことを学びます。Hello World リポジトリを作成し、GitHub の Pull Request ワークフローを学びます。
 
@@ -30,6 +38,7 @@ GitHubは、バージョン管理とコラボレーションのためのコー�
 
 # Step 1. Repository(リポジトリー)を作成する
 リポジトリは通常、一つのプロジェクトを整理するために使用されます。リポジトリには、フォルダやファイル、画像、ビデオ、スプレッドシート、データセットなど、プロジェクトに必要なものは何でも入れられます。最初にプロジェクトに関する情報をまとめたファイル、READMEを用意することをお勧めします。また、ライセンス情報なども入れておくといいでしょう。
+- (参考　企業でのOSS活用とOSSライセンス、　https://www.ibm.com/downloads/cas/VW0PZRBO　）
 
 これから最初のレポジトリ　”hello-world”を作っていきましょう。
 
