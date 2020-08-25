@@ -172,6 +172,10 @@ GitHubにサインインした後にへターゲットのレポジトリーに�
 こちらのIBMの開発者向けのコードパターンもオープンソースで公開されています。フォークして活用してください。 <br>
 https://developer.ibm.com/jp/patterns/
 
+それぞれの記事の"README"をクリックするとGitHubのページにいくことができます。　<br>
+- スケーラブルな WordPress 実装を Kubernetes 上にデプロイする  https://github.com/IBM/Scalable-WordPress-deployment-on-Kubernetes/blob/master/README.md
+- 教育用のセルフサービス・チャットボットを作成する https://github.com/IBM/Education-SelfService-AI-Chatbot/blob/master/README.md
+
 右上にある"Fork"をクリックしてください。
 
 <kbd><img src="images/fork1.png" width="640px"></kbd>
