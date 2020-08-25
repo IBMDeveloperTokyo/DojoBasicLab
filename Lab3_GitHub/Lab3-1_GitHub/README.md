@@ -169,6 +169,9 @@ https://guides.github.com/introduction/flow/
 GitHubにサインインした後にへターゲットのレポジトリーに行ってください。　（ここでは例としてhttps://github.com/osonoi/hello-world2)
 "osonoi"と言うアカウントの"Hello-world"をフォークします。
 
+こちらのIBMの開発者向けのコードパターンもオープンソースで公開されています。フォークして活用してください。 <br>
+https://developer.ibm.com/jp/patterns/
+
 右上にある"Fork"をクリックしてください。
 
 <kbd><img src="images/fork1.png" width="640px"></kbd>
