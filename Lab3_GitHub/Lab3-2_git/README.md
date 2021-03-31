@@ -107,7 +107,15 @@ Gitがインストールできたら、ターミナルからバージョンを�
 git --version
 ```
 
-次に、GitHubで作成したリポジトリへアクセスするために使用するGitHubのユーザー名とメールアドレスを設定ファイルへ登録しておきます。
+次に、GitHubで作成したリポジトリで使用するGitHubのユーザー名とメールアドレスを設定ファイルへ登録しておきます。
+これは、コミット時に Author と Committer として利用されます。
+```
+$ git log -1 --pretty=full
+commit xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Author: ユーザー名 <メールアドレス>
+Commit: ユーザー名 <メールアドレス>
+```
+
 以下のコマンドを実行してください。その際 **--global** オプションをつけるとマシン全体に適用されます。省略または、**--local** オプションをつけるとそのリポジトリのみに適用されます。
 
 ```
@@ -119,6 +127,8 @@ $ git config user.email <mail>
 $ git config user.name taijihagino
 $ git config user.email taiji@xxx.com
 ```
+
+これらの情報は、各GitHubリポジトリ内（プロジェクト内）の ```.git/config``` に書き込まれます。Globalとして設定した情報は ```~/.gitconfig``` に書き込まれます。
 
 ### 4-5. リポジトリの複製
 では、先程作成したリポジトリを複製しましょう。これは、前出のイメージのローカルリポジトリを作成する行為になります。
