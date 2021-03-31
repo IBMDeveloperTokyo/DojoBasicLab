@@ -8,7 +8,7 @@ Gitのいろいろな機能の中から、一般的によく使われる（と�
 では最初に確認したいと思いますが、[Git(ギット)](http://git-scm.com/)とはなんでしょうか？Gitは、いわゆる変更履歴管理・バージョン管理ツールの一つであると言えます。では、この手のツールとしてよく知られているCVSやSVNなどとは何が違うのでしょうか？
 
 Gitも同じく、プログラムソースなどの変更履歴を管理するバージョン管理ツールなのですが、一般的に「分散型」と呼ばれるタイプになります。もともとはLinuxの開発チームが使用していたものが、世界中の技術者に広まったようです。
-
+f
 Gitの特徴としては、分散型と呼ばれるように、自分の端末などのローカル環境に、完全なリポジトリの複製が作成されるところかと思います。これには、今までの変更履歴がすべて含まれます。前述のCVSやSVNなどに代表される集中管理型のバージョン管理システムでは、サーバー上にある１つのリポジトリに利用者全員がアクセスします。Gitでは、基本的にはローカルへ複製したリポジトリにアクセスして作業を行います。また、Gitではローカル環境にもコードの変更履歴を保存（コミット）することができるので、リモートのサーバーに常に接続する必要がありません。このため、ネットワークに接続していなくても作業を行うことができます。
 
 Gitのイメージは以下の通りです。
@@ -157,17 +157,17 @@ $ cd DojoLab.git
 ```
 
 ### 4-6. 作業用ブランチの作成とチェックアウト
-Gitの考え方として、リポジトリの正となる領域をmaster(マスター)と呼び、作業(ファイル編集や追加など)を行う際にはbranh(ブランチ)と呼ばれる領域を一時的に作成し、そこで作業を行います。作業した内容、つまり編集内容はこのbranchへ一旦コミットされるわけです。その後、branchの内容をmasterへ反映する、という流れになります。
+Gitの考え方として、リポジトリの正となる領域をmain(メイン)と呼び、作業(ファイル編集や追加など)を行う際にはbranh(ブランチ)と呼ばれる領域を一時的に作成し、そこで作業を行います。作業した内容、つまり編集内容はこのbranchへ一旦コミットされるわけです。その後、branchの内容をmainへ反映する、という流れになります。
 
-では、ここでもさっそく作業用のbranchを作成しましょう。まずは今いるbranchがmasterであることを確認します。引数を指定せずにbranchコマンドを実行すると、ブランチの一覧を表示することができます。頭に * のついているのが現在のブランチです。以下のコマンドを実行してください。
+では、ここでもさっそく作業用のbranchを作成しましょう。まずは今いるbranchがmainであることを確認します。引数を指定せずにbranchコマンドを実行すると、ブランチの一覧を表示することができます。頭に * のついているのが現在のブランチです。以下のコマンドを実行してください。
 
 ```
 $ git branch
-* master
+* main
 ```
 
-masterが表示されていればOKです。<br>
-では、次に作業用のブランチを作成します。新たにブランチを作成してから、masterから作成したブランチへ切り替えることもできますし、一気にブランチ作成と切り替えを行うこともできます。<br>
+mainが表示されていればOKです。<br>
+では、次に作業用のブランチを作成します。新たにブランチを作成してから、mainから作成したブランチへ切り替えることもできますし、一気にブランチ作成と切り替えを行うこともできます。<br>
 ブランチの切り替えというのは「どのブランチとしてソースをチェックアウトするか」ということです。ではやってみましょう。
 
 #### 4-6-1. branchを作成
@@ -185,7 +185,7 @@ $ git branch work
 では、確認してみましょう。再度branchコマンドを実行してください。
 ```
 $ git branch
-* master
+* main
   work
 ```
 
@@ -204,7 +204,7 @@ $ git checkout work
 Switched to branch 'work'
 ```
 
-これで、ブランチがmasterからworkへ切り替わりました。
+これで、ブランチがmainからworkへ切り替わりました。
 
 ブランチを作成すると同時にチェックアウトまで行うには以下のコマンドを実行してください。
 ```
@@ -290,19 +290,19 @@ $ git commit -m"README.mdを更新"
 ### 4-9. 変更のマージ
 ブランチのマージはmergeコマンドを使います。
 
-ここでは、masterブランチにworkの変更を取り込むということをします。
-まずはmasterブランチに移動しましょう。
+ここでは、mainブランチにworkの変更を取り込むということをします。
+まずはmainブランチに移動しましょう。
 
 ```
-$ git checkout master
-Switched to branch 'master'
-Your branch is up to date with 'origin/master'.
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
 ```
 
 マージを行う前に、一旦README.mdファイルの中身を確認してみます。
 ![Gitのイメージ](./image/image07.png)
 
-先程のファイルの編集はworkブランチ上で行ったので、masterブランチのREADME.mdの内容は変更されていません。
+先程のファイルの編集はworkブランチ上で行ったので、mainブランチのREADME.mdの内容は変更されていません。
 
 ```
 $ git merge work
@@ -327,7 +327,7 @@ Fast-forward
 では、この変更内容をGitHubのリポジトリ(clone元、つまりリモート)へ反映させていきましょう。変更を送信するため、以下のコマンドを実行してください。
 
 ```
-$ git push origin master
+$ git push origin main
 Enumerating objects: 5, done.
 Counting objects: 100% (5/5), done.
 Delta compression using up to 4 threads
@@ -335,11 +335,11 @@ Compressing objects: 100% (2/2), done.
 Writing objects: 100% (3/3), 352 bytes | 352.00 KiB/s, done.
 Total 3 (delta 0), reused 0 (delta 0)
 To https://github.com/taijihagino/DojoLab.git
-   ac63b89..3eefb35  master -> master
+   ac63b89..3eefb35  main -> main
 
 ```
 
-今回は自分がオーナーのリポジトリに対して、masterからmasterへpushを行ったので、そのままダイレクトに変更が反映されました。<br>
+今回は自分がオーナーのリポジトリに対して、mainからmainへpushを行ったので、そのままダイレクトに変更が反映されました。<br>
 再度GitHubへアクセスして確認してみましょう。
 
 ![Gitのイメージ](./image/image10.png)
@@ -347,7 +347,7 @@ To https://github.com/taijihagino/DojoLab.git
 変更が反映されたことが確認できました。
 
 ### 4-11. 変更の変更反映依頼
-さて、わかりやすくするために、今はローカルのmasterからリモートのmasterへ直接pushして反映を確認しました。<br>
+さて、わかりやすくするために、今はローカルのmainからリモートのmainへ直接pushして反映を確認しました。<br>
 しかし、通常よくあるケースは以下のパターンだと思います。
 
 * リポジトリオーナーが自分ではない
@@ -380,7 +380,7 @@ $ git commit -m "README.mdを更新"
  1 file changed, 3 insertions(+), 2 deletions(-)
 ```
 
-さて、ここで先程はmasterをチェックアウトしてマージを行いました。そして、masterからpushしたわけですね。<br>
+さて、ここで先程はmainをチェックアウトしてマージを行いました。そして、mainからpushしたわけですね。<br>
 ここでは、わかりやすいように、このworkブランチからリモートへpushしていきましょう。つまり、ローカルリポジトリのブランチであるworkの変更がリモートのGitHubリポジトリへ送信されるというわけです。<br>
 以下の通りコマンドを実行してください。
 
@@ -419,7 +419,7 @@ Pull requestタブに遷移するので、緑色の **Merge pull request** ボ�
 
 ![Gitのイメージ](./image/image13.png)
 
-マージすることの最終確認になります。緑色の **Confirm merge** ボタンをクリックしてください。このボタンを押すことで、workブランチからのプルリクエストがmasterへ反映されることになります。
+マージすることの最終確認になります。緑色の **Confirm merge** ボタンをクリックしてください。このボタンを押すことで、workブランチからのプルリクエストがmainへ反映されることになります。
 
 ![Gitのイメージ](./image/image14.png)
 
@@ -447,23 +447,23 @@ Code画面の **branches** タブをクリックします。
 ![Gitのイメージ](./image/image18.png)
 
 #### 4-12-2. ローカルブランチの削除
-ターミナルへ戻り、ブランチをマスターへ切り替えます。masterをチェックアウトしてください。
+ターミナルへ戻り、ブランチをマスターへ切り替えます。mainをチェックアウトしてください。
 
 ```
-$ git checkout master
-Switched to branch 'master'
-Your branch is up to date with 'origin/master'.
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
 ```
 
 ブランチを確認します。
 
 ```
 $ git branch
-* master
+* main
   work
 ```
 
-masterへいることを確認したら、workブランチを削除します。<br>
+mainへいることを確認したら、workブランチを削除します。<br>
 ここでは、まず以下のコマンドを実行しましょう。
 
 ```
@@ -472,8 +472,8 @@ error: The branch 'work' is not fully merged.
 If you are sure you want to delete it, run 'git branch -D work'.
 ```
 
-おそらく上記のようなエラーになったと思います。これは、workブランチで作業した内容がローカルのmasterへ反映していないことが原因です。<br>
-ここで、一旦masterへマージしてからworkを削除しましょう。
+おそらく上記のようなエラーになったと思います。これは、workブランチで作業した内容がローカルのmainへ反映していないことが原因です。<br>
+ここで、一旦mainへマージしてからworkを削除しましょう。
 
 ```
 $ git merge work
